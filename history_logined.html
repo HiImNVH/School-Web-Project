@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Store</title>
+    <link rel="stylesheet" href="/assets/css/history.css">
+</head>
+<header>
+    <div class="header-container">
+        <!-- Điều hướng phân loại sản phẩm -->
+        <nav>
+            <ul>
+                <li><a href="index.html?category=product/perfume">Nước hoa</a></li>
+                <li><a href="index.html?category=product/lipstick">Son môi</a></li>
+                <li><a href="index.html?category=product/powder">Phấn</a></li>
+                <li><a href="hindex.html?category=product/cosmetics">Mỹ phẩm khác</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header">
+            <a href="/shoppingcart.html" class="cart-btn">Giỏ hàng</a>
+            <div class="welcome-btn" onclick="logout()">Chào User1</div>
+        </div>
+        
+    </div>
+</header>
+<body>
+    <div class="container">
+        <h1>Lịch sử mua hàng</h1>
+
+        <!-- Thanh tìm kiếm -->
+        <form class="search-form" action="history_logined.html" method="GET">
+            <input type="text" name="query" placeholder="Tìm kiếm đơn hàng...">
+            <button type="submit">Tìm kiếm</button>
+        </form>
+
+        <table class="purchase-history" id="purchaseHistory">
+            <thead>
+                <tr>
+                    <th>Ngày mua</th>
+                    <th>Sản phẩm</th>
+                    <th>Mã giao dịch</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                    <th>Tổng tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10/10/2024</td>
+                    <td>
+                        <div class="product-info">
+                            <img src="/assets/images/nuochoaA.jpg" alt="Nước hoa A" class="product-img">
+                            <p class="product-name">Nước hoa A</p>
+                        </div>
+                    </td>
+                    <td>111103</td>
+                    <td>2</td>
+                    <td>500,000đ</td>
+                    <td>1,000,000đ</td>
+                </tr>
+                <tr>
+                    <td>08/09/2024</td>
+                    <td>
+                        <div class="product-info">
+                            <img src="/assets/images/nuochoaA.jpg" alt="Nước hoa A" class="product-img">
+                            <p class="product-name">Nước hoa A</p>
+                        </div>
+                    </td>
+                    <td>111102</td>
+                    <td>1</td>
+                    <td>500,000đ</td>
+                    <td>500,000đ</td>
+                </tr>
+                <tr>
+                    <td>01/09/2024</td>
+                    <td>
+                        <div class="product-info">
+                            <img src="/assets/images/nuochoaA.jpg" alt="Nước hoa A" class="product-img">
+                            <p class="product-name">Nước hoa A</p>
+                        </div>
+                    </td>
+                    <td>111101</td>
+                    <td>3</td>
+                    <td>500,000đ</td>
+                    <td>1,500,000đ</td>
+                </tr>
+                <tr>
+                    <td>15/08/2024</td>
+                    <td>
+                        <div class="product-info">
+                            <img src="/assets/images/nuochoaA.jpg" alt="Nước hoa A" class="product-img">
+                            <p class="product-name">Nước hoa A</p>
+                        </div>
+                    </td>
+                    <td>111100</td>
+                    <td>1</td>
+                    <td>500,000đ</td>
+                    <td>500,000đ</td>
+                </tr>
+                <tr>
+                    <td>08/08/2024</td>
+                    <td>
+                        <div class="product-info">
+                            <img src="/assets/images/nuochoaA.jpg" alt="Nước hoa A" class="product-img">
+                            <p class="product-name">Nước hoa A</p>
+                        </div>
+                    </td>
+                    <td>111099</td>
+                    <td>1</td>
+                    <td>500,000đ</td>
+                    <td>500,000đ</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 Perfume Store. All rights reserved.</p>
+    </footer>
+    
