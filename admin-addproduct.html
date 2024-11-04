@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Sản Phẩm</title>
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/admin-addproduct.css">
+</head>
+<body>
+    <header>
+        <a href="admin-logined.html" class="home-button">Trang chủ</a>
+        <h1>Quản lý Thông tin Quản trị</h1>
+        <div class="user-dropdown">
+            <span class="welcome-message">Chào Nguyễn Văn A</span>
+            <div class="dropdown-content">
+                <a href="admin-admin.html">Chỉnh sửa thông tin quản trị</a>
+                <a href="#">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="admin-user.html">Chỉnh sửa thông tin người dùng</a></li>
+                <li><a href="admin-addproduct.html">Thêm sản phẩm</a></li>
+                <li><a href="#">Chỉnh sửa sản phẩm</a></li>
+                <li><a href="#">Xóa sản phẩm</a></li>
+                <li><a href="#">Quản lí đơn hàng</a></li>
+                <li><a href="#">Thống kê</a></li>
+            </ul>
+        </nav>
+
+        <div class="inner">
+            <h2>Thêm Sản Phẩm Mới</h2>
+            <form action="/add-product" class="add-product-form">
+                <label for="product-name">Tên:</label>
+                <input type="text" id="product-name" name="product-name" placeholder="Nhập tên muốn hiển thị.">
+
+                <label for="product-price">Giá (VND):</label>
+                <input type="number" id="product-price" name="product-price" placeholder="Nhập giá mong muốn.">
+
+                <label for="product-description">Mô tả:</label>
+                <textarea id="product-description" name="product-description" rows="4" placeholder="Nhập mô tả"></textarea>
+
+                <label for="product-category">Danh mục:</label>
+                <select id="product-category" name="product-category">
+                    <option value="perfume">Nước hoa</option>
+                    <option value="lipstick">Son môi</option>
+                    <option value="chalk">Phấn</option>
+                    <option value="other">Mĩ phẩm khác</option>
+                </select>
+
+                <label for="product-image">Ảnh:</label>
+                <input type="file" id="product-image" name="product-image" accept="image/*">
+
+                <button type="submit">Thêm sản phẩm</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

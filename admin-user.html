@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - User Management</title>
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/admin-user.css">
+</head>
+<body>
+    <header>
+        <a href="admin-logined.html" class="home-button">Trang chủ</a>
+        <h1>Quản lý Thông tin Quản trị</h1>
+        <div class="user-dropdown">
+            <span class="welcome-message">Chào Nguyễn Văn A</span>
+            <div class="dropdown-content">
+                <a href="admin-admin.html">Chỉnh sửa thông tin quản trị</a>
+                <a href="#">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="admin-user.html">Chỉnh sửa thông tin người dùng</a></li>
+                <li><a href="admin-addproduct.html">Thêm sản phẩm</a></li>
+                <li><a href="#">Chỉnh sửa sản phẩm</a></li>
+                <li><a href="#">Xóa sản phẩm</a></li>
+                <li><a href="#">Quản lí đơn hàng</a></li>
+                <li><a href="#">Thống kê</a></li>
+            </ul>
+        </nav>
+
+        <div class="inner">
+            <h2>Quản lý Người dùng</h2>
+
+            <!-- User Info Boxes -->
+            <div class="user-info-boxes">
+                <div class="info-box">
+                    <h3>Số người dùng đang hoạt động</h3>
+                    <p>120</p>
+                </div>
+                <div class="info-box">
+                    <h3>Số tài khoản không hoạt động trong 30 ngày</h3>
+                    <p>15</p>
+                </div>
+            </div>
+            <div class="user-username">
+                <h3>Tra cứu thông tin người dùng</h3>
+                <input type="text" id="user-username-input" placeholder="Nhập tên đăng nhập của khách hàng.">
+            </div>
+            <!-- User Actions -->
+            <div class="button-group">
+                    <button>Tạm khóa tài khoản</button>
+                    <button>Xóa tài khoản</button>
+            </div>
+
+            <!-- Change Password Section -->
+            <div class="change-password">
+                <h3>Đổi mật khẩu</h3>
+                <label for="current-password">Nhập mật khẩu cũ:</label>
+                <input type="password" id="current-password" placeholder="Mật khẩu cũ">
+                
+                <label for="new-password">Nhập mật khẩu mới:</label>
+                <input type="password" id="new-password" placeholder="Mật khẩu mới">
+                
+                <button>Đổi mật khẩu</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
