@@ -462,3 +462,30 @@ advanced-search {
 .advanced-search .search-form button:hover {
     background-color: #DB4667;
 }
+.product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    background-color: #f6d9f2;
+    border: none;
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: #e6b8e2;
+}
+
+.delete-btn {
+    background-color: #ffcccc;
+}
+
+.delete-btn:hover {
+    background-color: #ff9999;
+}

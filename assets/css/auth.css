@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    background: linear-gradient(135deg, #ffe4b5, #ffdab9);
     background-size: cover;
 }
 
@@ -36,6 +36,7 @@ label {
     font-size: 1em;
     margin-bottom: 0.5em;
     color: #333;
+    font-weight: bold
 }
 
 input {
@@ -55,7 +56,7 @@ input:focus {
 button {
     width: 100%;
     padding: 1em;
-    background-color: #ff8a00;
+    background-color: #ee8ea1;
     color: white;
     border: none;
     border-radius: 6px;
