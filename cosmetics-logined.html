@@ -12,23 +12,31 @@
                 <nav>
                     <ul>
                         <div class="logo-container">
-                            <a href="index.html">
+                            <a href="index-logined.html">
                             <img src="assets/images/5.jpg" alt="Logo nhỏ">
                             </a>
                         </div>
-                        <form class="search-form" action="search.html" method="GET">
+                        <form class="search-form" action="search-logined.html" method="GET">
                             <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
                             <button type="submit">Tìm kiếm</button>
                         </form>
-                        <li><a href="perfume.html">NƯỚC HOA</a></li>
-                        <li><a href="lipstick.html">SON MÔI</a></li>
-                        <li><a href="powder.html">PHẤN</a></li>
-                        <li><a href="cosmetics.html">MỸ PHẨM KHÁC</a></li>
+                    </form>
+                    <li><a href="perfume-logined.html">NƯỚC HOA</a></li>
+                    <li><a href="lipstick-logined.html">SON MÔI</a></li>
+                    <li><a href="powder-logined.html">PHẤN</a></li>
+                    <li><a href="cosmetics-logined.html">MỸ PHẨM KHÁC</a></li>
                     </ul>
                 </nav>
-            <div class="header">
-                <a href="auth.html" class="welcome-btn">ĐĂNG NHẬP</a>
-            </div>
+                <div class="header">
+                    <a href="shoppingcart-logined.html" class="cart-btn">GIỎ HÀNG</a>
+                    <div class="welcome-btn logined-btn">
+                        Chào User1
+                        <div class="dropdown-content">
+                            <a href="history-logined.html">LỊCH SỬ MUA HÀNG</a>
+                            <a href="#" onclick="logout()">ĐĂNG XUẤT</a>
+                        </div>
+                    </div>
+                    </div>
             </div>
         </header>
         <div class="lowerheader">
@@ -46,7 +54,7 @@
     
         <div class="inner">
             <div class="advanced-search">
-                <form class="search-form" action="search.html" method="GET">
+                <form class="search-form" action="search-logined.html" method="GET">
                     <!-- Tìm kiếm theo thể loại -->
                     <select name="category">
                         <option value="">Chọn loại sản phẩm</option>
@@ -77,112 +85,118 @@
                     <button type="submit">Tìm kiếm</button>
                 </form>
             </div>
-            <h1>MẶT HÀNG MỚI NHẤT</h1>
+            <h1>MỸ PHẨM KHÁC</h1>
             <section class="products">
                 <div class="grid-container">
                     <div class="product-item">
-                        <a href="product.html?id=1">
+                        <a href="product-logined.html?id=1">
                             <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
                             <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
                             <p>3,500,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=2">
+                        <a href="product-logined.html?id=2">
                             <img src="assets/images/product2.jpg" alt="Sản phẩm 2">
                             <h3>Son Gel TechnoSatin</h3>
                             <p>800,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=3">
+                        <a href="product-logined.html?id=3">
                             <img src="assets/images/product3.jpg" alt="Sản phẩm 3">
                             <h3>Son Dior</h3>
                             <p>850,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=4">
+                        <a href="product-logined.html?id=4">
                             <img src="assets/images/product4.jpg" alt="Sản phẩm 4">
                             <h3>Nước hoa nữ Dior Miss Dior Blooming Bouquet EDT</h3>
                             <p>2,850,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=5">
+                        <a href="product-logined.html?id=5">
                             <img src="assets/images/product5.jpg" alt="Sản phẩm 5">
                             <h3>Miss Di</h3>
                             <p>600,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=6">
+                        <a href="product-logined.html?id=6">
                             <img src="assets/images/product6.jpg" alt="Sản phẩm 6">
                             <h3>Phấn Phủ Bột Nars Light Reflecting Setting Loose Powder</h3>
                             <p>200,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=7">
+                        <a href="product-logined.html?id=7">
                             <img src="assets/images/product7.jpg" alt="Sản phẩm 7">
                             <h3>Phấn Phủ Bột Perfect Diary Weightless Soft Velvet Blurring Loose Powder</h3>
                             <p>199,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=8">
+                        <a href="product-logined.html?id=8">
                             <img src="assets/images/product8.jpg" alt="Sản phẩm 8">
                             <h3>Phấn Phủ YSL All Hours Hyper Finish 01  </h3>
                             <p>1,499,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=9">
+                        <a href="product-logined.html?id=9">
                             <img src="assets/images/product9.jpg" alt="Sản phẩm 9">
                             <h3>Son 3CE Soft Matte Red Muse</h3>
                             <p>279,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=10">
+                        <a href="product-logined.html?id=10">
                             <img src="assets/images/product10.jpg" alt="Sản phẩm 10">
                             <h3>Nước Hoa Burberry For Women EDP</h3>
                             <p>1,280,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=11">
+                        <a href="product-logined.html?id=11">
                             <img src="assets/images/product11.jpg" alt="Sản phẩm 11">
                             <h3>Son Tint Carslan Lip Glow Serum</h3>
                             <p>229,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                     <div class="product-item">
-                        <a href="product.html?id=12">
+                        <a href="product-logined.html?id=12">
                             <img src="assets/images/product12.jpg" alt="Sản phẩm 12">
                             <h3>Phấn phủ Dior Forever Natural Velvet Transfer-Proof Compact Foundation</h3>
                             <p>2.250,000 VND</p>
                         </a>
-                        <a href="auth.html"><button>Thêm vào giỏ</button></a>
+                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                     </div>
                 </div>
             </section>
+        </div>
+        <div class="pagination">
+            <a href="cosmetics-logined.html?page=1"><button>1</button></a>
+            <a href="cosmetics-logined.html?page=2"><button>2</button></a>
+            <a href="cosmetics-logined.html?page=3"><button>3</button></a>
+            <a href="cosmetics-logined.html?page=?"><button>...</button></a>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 Meowti's Cosmetics Store. All rights reserved.</p>
     </footer>
-  
+    <script src="assets/js/index.js"></script>
 </body>
 </html>

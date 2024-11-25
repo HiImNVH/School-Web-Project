@@ -13,60 +13,77 @@
         <div class="header-container">
             <nav>
                 <ul>
-                    <li><a href="index.html?category=product/perfume">Nước hoa</a></li>
-                    <li><a href="index.html?category=product/lipstick">Son môi</a></li>
-                    <li><a href="index.html?category=product/powder">Phấn</a></li>
-                    <li><a href="index.html?category=product/cosmetics">Mỹ phẩm khác</a></li>
+                    <div class="logo-container">
+                        <a href="index.html">
+                        <img src="assets/images/5.jpg" alt="Logo nhỏ">
+                        </a>
+                    </div>
+                    <form class="search-form" action="search.html" method="GET">
+                        <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
+                        <button type="submit">Tìm kiếm</button>
+                    </form>
+                    <li><a href="index.html?category=product/perfume">NƯỚC HOA</a></li>
+                    <li><a href="index.html?category=product/lipstick">SON MÔI</a></li>
+                    <li><a href="index.html?category=product/powder">PHẤN</a></li>
+                    <li><a href="index.html?category=product/cosmetics">MỸ PHẨM KHÁC</a></li>
                 </ul>
             </nav>
         <div class="header">
-            <a href="shoppingcart.html" class="cart-btn">Giỏ hàng</a>
-            <a href="auth.html" class="login-btn">Đăng nhập / Đăng ký</a>
+            <a href="auth.html" class="welcome-btn">ĐĂNG NHẬP</a>
         </div>
         </div>
     </header>
     
-    <form class="search-form" action="search.html" method="GET">
-        <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
-        <button type="submit">Tìm kiếm</button>
-    </form>
 
-    <h2>Kết quả tìm kiếm cho: Nước hoa A</h2>
+    <h2>Kết quả mà bạn tìm kiếm:</h2>
     
     <div class="inner">
         <section class="search-results">
             <div class="grid-container">
                 <div class="product-item">
-                    <a href="product.html?id=1">
+                    <a href="product-logined.html?id=1">
                         <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
+                        <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                        <p>Giá: 3,500,000 VND</p>
                     </a>
-                    <button>Mua hàng</button>
+                    <a href="auth.html"><button>Mua hàng</button></a>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=1">
-                        <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
+                    <a href="product-logined.html?id=2">
+                        <img src="assets/images/product10.jpg" alt="Sản phẩm 2">
+                        <h3>Nước Hoa Burberry For Women EDP</h3>
+                        <p>Giá: 1,280,000 VND</p>
                     </a>
-                    <button>Mua hàng</button>
+                    <a href="auth.html"><button>Mua hàng</button></a>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=1">
-                        <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
+                    <a href="product-logined.html?id=3">
+                        <img src="assets/images/product4.jpg" alt="Sản phẩm 3">
+                        <h3>Nước hoa nữ Dior Miss Dior Blooming Bouquet EDT</h3>
+                        <p>Giá: 2,850,000 VND</p>
                     </a>
-                    <button>Mua hàng</button>
+                    <a href="auth.html"><button>Mua hàng</button></a>
+                </div>
+                <div class="product-item">
+                    <a href="product-logined.html?id=5">
+                        <img src="assets/images/product5.jpg" alt="Sản phẩm 5">
+                        <h3>Miss Di</h3>
+                        <p>600,000 VND</p>
+                    </a>
+                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
             </div>
         </section>
+        <!-- <div class="pagination">
+            <a href="search.html?page=1"><button>1</button></a>
+            <a href="search.html?page=2"><button>2</button></a>
+        </div> -->
     </div>
 
     <footer>
         <p>&copy; 2024 Perfume Store. All rights reserved.</p>
     </footer>
 
+    <script src="assets/js/index.js"></script>
 </body>
 </html>

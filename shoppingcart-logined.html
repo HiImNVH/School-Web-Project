@@ -9,104 +9,113 @@
 </head>
 <body>
 
-    <script>
-        function logout() {
-            alert("Bạn đã đăng xuất.");
-            window.location.href = "index.html";
-        }
-    </script>
     <header>
         <div class="header-container">
             <nav>
                 <ul>
-                    <li><a href="index-logined.html?category=product/perfume">Nước hoa</a></li>
-                    <li><a href="index-logined.html?category=product/lipstick">Son môi</a></li>
-                    <li><a href="index-logined.html?category=product/powder">Phấn</a></li>
-                    <li><a href="index-logined.html?category=product/cosmetics">Mỹ phẩm khác</a></li>
+                    <div class="logo-container">
+                        <a href="index_logined.html">
+                        <img src="assets/images/5.jpg" alt="Logo nhỏ">
+                        </a>
+                    </div>
+                    <form class="search-form" action="search-logined.html" method="GET">
+                        <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
+                        <button type="submit">Tìm kiếm</button>
+                    </form>                
+                    <li><a href="perfume-logined.html">NƯỚC HOA</a></li>
+                    <li><a href="perfume-logined.html">SON MÔI</a></li>
+                    <li><a href="perfume-logined.html">PHẤN</a></li>
+                    <li><a href="perfume-logined.html">MỸ PHẨM KHÁC</a></li>
                 </ul>
             </nav>
-            
             <div class="header">
-                <a href="shoppingcart-logined.html" class="cart-btn">Giỏ hàng</a>
-                <div class="welcome-btn" onclick="logout()">Chào User1</div>
+                <div class="welcome-btn">
+                    Chào User1
+                    <div class="dropdown-content">
+                        <a href="history-logined.html">LỊCH SỬ MUA HÀNG</a>
+                        <a href="#" onclick="logout()">ĐĂNG XUẤT</a>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </header>
 
     <div class="inner">
         <section class="cart-container">
-            <h2>Giỏ hàng của bạn</h2>
+            <h2>GIỎ HÀNG CỦA BẠN</h2>
 
             <div class="cart-items">
                 <div class="cart-item">
-                    <img src="assets/images/product1.jpg" alt="Nước hoa A">
+                    <input type="checkbox" class="select-item">
+                    <img src="assets/images/product10.jpg" alt="NƯỚC HOA A">
                     <div class="item-info">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
+                        <h3>Nước Hoa Burberry For Women EDP </h3>
+                        <p>Giá: 1,280,000 VND</p>
                     </div>
                     <div class="item-controls">
                         <button>-</button>
                         <input type="number" value="1" min="1" readonly>
                         <button>+</button>
-                        <button class="remove-btn">Xóa</button>
-                        <a href="product-logined.html" class="details-btn">Chi tiết</a>
+                       
+                        <a href="product-logined.html?id=1" class="details-btn">Chi tiết</a>
                     </div>
                 </div>
+                
                 <div class="cart-item">
-                    <img src="assets/images/product1.jpg" alt="Nước hoa A">
+                    <input type="checkbox" class="select-item">
+                    <img src="assets/images/product7.jpg" alt="NƯỚC HOA A">
                     <div class="item-info">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
+                        <h3>Phấn Phủ Bột Perfect Diary Weightless Soft Velvet Blurring Loose Powder</h3>
+                        <p>Giá: 199,000 VND</p>
                     </div>
                     <div class="item-controls">
                         <button>-</button>
                         <input type="number" value="1" min="1" readonly>
                         <button>+</button>
-                        <button class="remove-btn">Xóa</button>
-                        <a href="product-logined.html" class="details-btn">Chi tiết</a>
-                    </div>
-                </div>
-
-                <div class="cart-item">
-                    <img src="assets/images/product1.jpg" alt="Nước hoa A">
-                    <div class="item-info">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
-                    </div>
-                    <div class="item-controls">
-                        <button>-</button>
-                        <input type="number" value="1" min="1" readonly>
-                        <button>+</button>
-                        <button class="remove-btn">Xóa</button>
-                        <a href="product-logined.html" class="details-btn">Chi tiết</a>
+                        <a href="product-logined.html?id=2" class="details-btn">Chi tiết</a>
                     </div>
                 </div>
 
                 <div class="cart-item">
-                    <img src="assets/images/product1.jpg" alt="Nước hoa A">
+                    <input type="checkbox" class="select-item">
+                    <img src="assets/images/product2.jpg" alt="NƯỚC HOA A">
                     <div class="item-info">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
+                        <h3>Son Gel TechnoSatin</h3>
+                        <p>Giá: 800,000 VND</p>
                     </div>
                     <div class="item-controls">
                         <button>-</button>
                         <input type="number" value="1" min="1" readonly>
                         <button>+</button>
-                        <button class="remove-btn">Xóa</button>
-                        <a href="product-logined.html" class="details-btn">Chi tiết</a>
+                        <a href="product-logined.html?id=3" class="details-btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="assets/images/product1.jpg" alt="NƯỚC HOA A">
+                    <div class="item-info">
+                        <input type="checkbox" class="select-item">
+                        <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                        <p>Giá: 3,500,000 VND</p>
+                    </div>
+                    <div class="item-controls">
+                        <button>-</button>
+                        <input type="number" value="1" min="1" readonly>
+                        <button>+</button>
+                        <a href="product-logined.html?id=4" class="details-btn">Chi tiết</a>
                     </div>
                 </div>
             </div>
             <div class="checkout">
-                <button class="checkout-btn">Mua ngay</button>
+                <a href="order.html"><button class="checkout-btn">Mua ngay</button></a>
             </div>
         </section>
     </div>
-
+    
     <footer>
         <p>&copy; 2024 Perfume Store. All rights reserved.</p>
     </footer>
 
+    <script src="assets/js/index.js"></script>
 </body>
 </html>

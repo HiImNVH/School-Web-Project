@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết đơn hàng</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/history-detail.css">
+</head>
+<body>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <div class="logo-container">
+                        <a href="index-logined.html">
+                        <img src="assets/images/5.jpg" alt="Logo nhỏ">
+                        </a>
+                    </div>
+                    <form class="search-form" action="search-logined.html" method="GET">
+                        <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
+                        <button type="submit">Tìm kiếm</button>
+                    </form>                
+                </form>
+                <li><a href="perfume-logined.html">NƯỚC HOA</a></li>
+                <li><a href="lipstick-logined.html">SON MÔI</a></li>
+                <li><a href="powder-logined.html">PHẤN</a></li>
+                <li><a href="cosmetics-logined.html">MỸ PHẨM KHÁC</a></li>
+                </ul>
+            </nav>
+            <div class="header">
+                <a href="shoppingcart-logined.html" class="cart-btn">GIỎ HÀNG</a>
+                <div class="welcome-btn logined-btn">
+                    Chào User1
+                    <div class="dropdown-content">
+                        <a href="history-logined.html">LỊCH SỬ MUA HÀNG</a>
+                        <a href="#" onclick="logout()">ĐĂNG XUẤT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>CHI TIẾT ĐƠN HÀNG </h1>
+
+        <!-- Thông tin khách hàng -->
+        <div class="section">
+            <h2>Thông tin khách hàng</h2>
+            <p><strong>Tên khách hàng:</strong> Nguyễn Văn A</p>
+            <p><strong>Số điện thoại:</strong> 0123 456 789</p>
+            <p><strong>Email:</strong> nguyen.vana@example.com</p>
+            <p><strong>Địa chỉ giao hàng:</strong> 273 An Dương Vương, Quận 5, TP.HCM</p>
+            
+        </div>
+
+        <!-- Thông tin đơn hàng -->
+        <div class="section">
+            <h2>Thông tin đơn hàng</h2>
+            <p><strong>Mã đơn hàng:</strong> #MWTI02</p>
+            <p><strong>Ngày đặt hàng:</strong> 06/10/2024</p>
+            <p><strong>Trạng thái:</strong> <span class="highlight">Hoàn tất</span></p>
+            <p><strong>Ghi chú:</strong></p>
+        </div>
+        <!-- Chi tiết sản phẩm -->
+        <div class="section">
+            <h2>Chi tiết sản phẩm</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Đơn giá</th>
+                        <th>Thành tiền</th>
+                        <th>Chi tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="assets/images/product9.jpg" alt="Product 1" class="product-image"></td>
+                        <td>Son 3CE Soft Matte Red Muse</td>
+                        <td>1</td>
+                        <td>279,000 VND</td>
+                        <td>279,000 VND</td>
+                        <td><a href="product-logined.html" class="details-btn">Chi tiết</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets/images/product10.jpg" alt="Product 1"class="product-image"></td>
+                        <td>Nước Hoa Burberry For Women EDP</td>
+                        <td>2</td>
+                        <td>1,280,000 VND</td>
+                        <td>2,560,000 VND</td>
+                        <td><a href="product-logined.html" class="details-btn">Chi tiết</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total">
+                <p><strong>Tổng số tiền:</strong> 2,839,000 VND</p>
+            </div>
+        </div>
+
+        <!-- Thông tin thanh toán -->
+        <div class="section">
+            <h2>Thông tin thanh toán</h2>
+            <p><strong>Phương thức thanh toán:</strong> COD (Thanh toán khi nhận hàng)</p>
+            <p><strong>Trạng thái thanh toán:</strong> Đã thanh toán</p>
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Perfume Store. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

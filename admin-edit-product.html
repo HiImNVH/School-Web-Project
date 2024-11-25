@@ -4,39 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi tiết sản phẩm - Perfume Store</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/admin-edit-product.css">
 </head>
 <body>
-
     <header>
         <div class="header-container">
             <nav>
                 <ul>
                     <div class="logo-container">
-                        <a href="index-logined.html">
+                        <a href="index.html">
                         <img src="assets/images/5.jpg" alt="Logo nhỏ">
                         </a>
                     </div>
-                    <form class="search-form" action="search-logined.html" method="GET">
-                        <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
-                        <button type="submit">Tìm kiếm</button>
-                    </form>                
-                    <li><a href="perfume-logined.html?category=product/perfume">NƯỚC HOA</a></li>
-                    <li><a href="perfume-logined.html?category=product/lipstick">SON MÔI</a></li>
-                    <li><a href="perfume-logined.html?category=product/powder">PHẤN</a></li>
-                    <li><a href="perfume-logined.html?category=product/cosmetics">MỸ PHẨM KHÁC</a></li>
+                </form>
+                <li><a href="#">NƯỚC HOA</a></li>
+                <li><a href="#">SON MÔI</a></li>
+                <li><a href="#">PHẤN</a></li>
+                <li><a href="#">MỸ PHẨM KHÁC</a></li>
                 </ul>
             </nav>
             <div class="header">
-                <a href="shoppingcart-logined.html" class="cart-btn">GIỎ HÀNG</a>
-                <div class="welcome-btn">
-                    Chào User1
-                    <div class="dropdown-content">
-                        <a href="history-logined.html">Lịch sử mua hàng</a>
-                        <a href="#" onclick="logout()">Đăng xuất</a>
-                    </div>
+                <div class="welcome-btn logined-btn">
+                    <a href="admin-logined.html">Trở về</a>
                 </div>
-            </div>
+                </div>
         </div>
     </header>
 
@@ -46,16 +37,28 @@
                 <div class="product-image">
                     <img src="assets/images/product10.jpg" alt="Nước Hoa Burberry For Women EDP" class="product-img">
                 </div>
-                <div class="product-info">
-                    <h1>Nước Hoa Burberry For Women EDP</h1>
-                    <p class="price">Giá: 1,280,000 VND</p>
-                    <p class="description">
-                        Nước Hoa Burberry For Women EDP 100ml là chai nước hoa cho nữ sang trọng, mùi hương cao cấp đến từ thương hiệu Burberry của Anh. Burberry For Women Eau De Parfum tạo cảm giác khá sang trọng và nữ tính, rất thích hợp cho những cô nàng ngọt ngào và mơ mộng.
-                    </p>
-                    <div class="actions">
-                        <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
-                    </div>
-                </div>
+                <form class="add-product-form">
+                    <label for="product-name">Tên:</label>
+                    <input type="text" id="product-name" name="product-name" placeholder="Nhập tên muốn hiển thị.">
+    
+                    <label for="product-price">Giá (VND):</label>
+                    <input type="number" id="product-price" name="product-price" placeholder="Nhập giá mong muốn.">
+    
+                    <label for="product-description">Mô tả:</label>
+                    <textarea id="product-description" name="product-description" rows="4" placeholder="Nhập mô tả"></textarea>
+    
+                    <label for="product-category">Danh mục:</label>
+                    <select id="product-category" name="product-category">
+                        <option value="perfume">Nước hoa</option>
+                        <option value="lipstick">Son môi</option>
+                        <option value="chalk">Phấn</option>
+                        <option value="other">Mĩ phẩm khác</option>
+                    </select>
+    
+                    <label for="product-image">Ảnh:</label>
+                    <input type="file" id="product-image" name="product-image" accept="image/*">
+                    <button>Thêm sản phẩm</button>
+                </form>
             </div>
         </section>
         <section class="related-products">
@@ -101,6 +104,6 @@
     <footer>
         <p>&copy; 2024 Perfume Store. All rights reserved.</p>
     </footer>
-    <script src="assets/js/index.js"></script>
+
 </body>
 </html>

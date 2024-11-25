@@ -16,15 +16,23 @@
         <div class="header-container">
             <nav>
                 <ul>
-                    <li><a href="index.html?category=product/perfume">Nước hoa</a></li>
-                    <li><a href="index.html?category=product/lipstick">Son môi</a></li>
-                    <li><a href="index.html?category=product/powder">Phấn</a></li>
-                    <li><a href="index.html?category=product/cosmetics">Mỹ phẩm khác</a></li>
+                    <div class="logo-container">
+                        <a href="index.html">
+                        <img src="assets/images/5.jpg" alt="Logo nhỏ">
+                        </a>
+                    </div>
+                    <form class="search-form" action="search.html" method="GET">
+                        <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
+                        <button type="submit">Tìm kiếm</button>
+                    </form>
+                    <li><a href="index.html?category=product/perfume">NƯỚC HOA</a></li>
+                    <li><a href="index.html?category=product/lipstick">SON MÔI</a></li>
+                    <li><a href="index.html?category=product/powder">PHẤN</a></li>
+                    <li><a href="index.html?category=product/cosmetics">MỸ PHẨM KHÁC</a></li>
                 </ul>
             </nav>
         <div class="header">
-            <a href="shoppingcart.html" class="cart-btn">Giỏ hàng</a>
-            <a href="auth.html" class="login-btn">Đăng nhập / Đăng ký</a>
+            <a href="auth.html" class="welcome-btn">ĐĂNG NHẬP</a>
         </div>
         </div>
     </header>
@@ -33,15 +41,13 @@
         <section class="product-detail">
             <div class="product-detail-container">
                 <div class="product-image">
-                    <img src="assets/images/product1.jpg" alt="Nước hoa A" class="product-img">
+                    <img src="assets/images/product10.jpg" alt="Nước Hoa Burberry For Women EDP" class="product-img">
                 </div>
                 <div class="product-info">
-                    <h1>Nước hoa A</h1>
-                    <p class="price">Giá: 500,000 VND</p>
+                    <h1>Nước Hoa Burberry For Women EDP</h1>
+                    <p class="price">Giá: 1,280,000 VND</p>
                     <p class="description">
-                        Nước hoa A là một lựa chọn tuyệt vời cho những ai yêu thích hương thơm quyến rũ và sang trọng. 
-                        Sản phẩm được chiết xuất từ các thành phần tự nhiên, mang đến mùi hương tươi mát và bền lâu. 
-                        Phù hợp cho cả nam và nữ, nước hoa này sẽ giúp bạn tự tin hơn trong các sự kiện quan trọng.
+                        Nước Hoa Burberry For Women EDP 100ml là chai nước hoa cho nữ sang trọng, mùi hương cao cấp đến từ thương hiệu Burberry của Anh. Burberry For Women Eau De Parfum tạo cảm giác khá sang trọng và nữ tính, rất thích hợp cho những cô nàng ngọt ngào và mơ mộng.
                     </p>
                     <div class="actions">
                         <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
@@ -53,34 +59,38 @@
             <h2>Sản phẩm liên quan</h2>
             <div class="grid-container">
                 <div class="product-item">
-                    <a href="product.html?id=1"> 
-                        <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
-                    </a>
-                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
-                </div><div class="product-item">
                     <a href="product.html?id=1">
                         <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
-                    </a>
-                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
-                </div><div class="product-item">
-                    <a href="product.html?id=1"> 
-                        <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
-                    </a>
-                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
-                </div><div class="product-item">
-                    <a href="product.html?id=1">
-                        <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
-                        <h3>Nước hoa A</h3>
-                        <p>Giá: 500,000 VND</p>
+                        <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                        <p>3,500,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
+                <div class="product-item">
+                    <a href="product.html?id=2">
+                        <img src="assets/images/product2.jpg" alt="Sản phẩm 2">
+                        <h3>Son Gel TechnoSatin</h3>
+                        <p>800,000 VND</p>
+                    </a>
+                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
+                </div>
+                <div class="product-item">
+                    <a href="product.html?id=3">
+                        <img src="assets/images/product3.jpg" alt="Sản phẩm 3">
+                        <h3>Son Dior</h3>
+                        <p>850,000 VND</p>
+                    </a>
+                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
+                </div>
+                <div class="product-item">
+                    <a href="product.html?id=4">
+                            <img src="assets/images/product4.jpg" alt="Sản phẩm 4">
+                            <h3>Nước hoa nữ Dior Miss Dior Blooming Bouquet EDT</h3>
+                            <p>2,850,000 VND</p>
+                        </a>
+                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
+                </div>
+
             </div>
         </section>
     </div>

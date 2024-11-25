@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử mua hàng</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/history.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <div class="logo-container">
+                        <a href="index-logined.html">
+                        <img src="assets/images/5.jpg" alt="Logo nhỏ">
+                        </a>
+                    </div>
+                    <form class="search-form" action="search-logined.html" method="GET">
+                        <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
+                        <button type="submit">Tìm kiếm</button>
+                    </form>                
+                    <li><a href="perfume-logined.html?category=product/perfume">NƯỚC HOA</a></li>
+                    <li><a href="perfume-logined.html?category=product/lipstick">SON MÔI</a></li>
+                    <li><a href="perfume-logined.html?category=product/powder">PHẤN</a></li>
+                    <li><a href="perfume-logined.html?category=product/cosmetics">MỸ PHẨM KHÁC</a></li>
+                </ul>
+            </nav>
+            <div class="header">
+                <a href="shoppingcart-logined.html" class="cart-btn">GIỎ HÀNG</a>
+                <div class="welcome-btn">
+                    Chào User1
+                    <div class="dropdown-content">
+                        <a href="#" onclick="logout()">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <h2>LỊCH SỬ MUA HÀNG</h2>
+        <table class="cart-history">
+            <thead>
+                <tr>
+                    <th>Mã đơn hàng</th>
+                    <th>Ngày mua</th>
+                    <th>Sản phẩm</th>
+                    <th>Tổng số tiền</th>
+                    <th>Chi tiết</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#MWTI02</td>
+                    <td>06/10/2024</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <img src="assets/images/product9.jpg" alt="Product 1">
+                                <span>Son 3CE Soft Matte Red Muse</span>
+                            </li>
+                            <li>
+                                <img src="assets/images/product10.jpg" alt="Product 2">
+                                <span>Nước Hoa Burberry For Women EDP</span>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>2,839,000 VND</td>
+                    <td><a href="history-detail.html" class="details-btn">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>#MWTI01</td>
+                    <td>10/12/2023</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <img src="assets/images/product7.jpg" alt="Product 3">
+                                <span>Phấn Phủ Bột Perfect Diary Weightless Soft Velvet Blurring Loose Powder</span>
+                            </li>
+                            <li>
+                                <img src="assets/images/product1.jpg" alt="Product 4">
+                                <span>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</span>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>2,300,000 VND</td>
+                    <td><a href="history-detail.html" class="details-btn">Xem chi tiết</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Perfume Store. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

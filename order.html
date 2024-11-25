@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin mua hàng</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/order.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <div class="logo-container">
+                        <a href="index-logined.html">
+                        <img src="assets/images/5.jpg" alt="Logo nhỏ">
+                        </a>
+                    </div>
+                    <form class="search-form" action="search-logined.html" method="GET">
+                        <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
+                        <button type="submit">Tìm kiếm</button>
+                    </form>                
+                    <li><a href="perfume-logined.html?category=product/perfume">NƯỚC HOA</a></li>
+                    <li><a href="perfume-logined.html?category=product/lipstick">SON MÔI</a></li>
+                    <li><a href="perfume-logined.html?category=product/powder">PHẤN</a></li>
+                    <li><a href="perfume-logined.html?category=product/cosmetics">MỸ PHẨM KHÁC</a></li>
+                </ul>
+            </nav>
+            <div class="header">
+                <a href="shoppingcart-logined.html" class="cart-btn">GIỎ HÀNG</a>
+                <div class="welcome-btn">
+                    Chào User1
+                    <div class="dropdown-content">
+                        <a href="history-logined.html">Lịch sử mua hàng</a>
+                        <a href="#" onclick="logout()">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="order-form">
+        <h2>THÔNG TIN GIAO HÀNG</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Họ tên:</label>
+                <input type="text" id="name" name="name" placeholder="Tên người nhận...">
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Số điện thoại nhận hàng..." pattern="[0-9]{10,11}">
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ:</label>
+                <textarea id="address" name="address" placeholder="Địa chỉ nhận hàng..." rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="note">Ghi chú:</label>
+                <input type="text" id="note" name="note" placeholder="Ghi chú...">
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Phương thức thanh toán:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="">--Chọn--</option>
+                    <option value="cod">Thanh toán khi nhận hàng (COD)</option>
+                    <option value="e-wallet">Thanh toán qua ví điện tử</option>
+                    <option value="card">Thẻ tín dụng / thẻ ghi nợ</option>
+                </select>
+            </div>
+    
+            <div id="e-wallet-info" class="hidden">
+                <div class="form-group">
+                    <label for="wallet-provider">Nhà cung cấp ví:</label>
+                    <select id="wallet-provider" name="wallet-provider">
+                        <option value="">--Chọn--</option>
+                        <option value="MoMo">MOMO</option>
+                        <option value="ZaloPay">ZaloPay</option>
+                        <option value="VNPAY">VNPAY</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="wallet-account">Tên tài khoản ví:</label>
+                    <input type="text" id="wallet-account" name="wallet-account">
+                </div>
+                <div class="form-group">
+                    <label for="wallet-accountid">Số tài khoản ví:</label>
+                    <input type="text" id="wallet-accountid" name="wallet-accountid">
+                </div>
+            </div>
+    
+            <div id="card-info" class="hidden">
+                <div class="form-group">
+                    <label for="card-name">Tên thẻ:</label>
+                    <input type="text" id="card-name" name="card-name">
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Số thẻ:</label>
+                    <input type="text" id="card-number" name="card-number">
+                </div>
+                <div class="form-group">
+                    <label for="card-expiry">Ngày hết hạn (MM/YY):</label>
+                    <input type="text" id="card-expiry" name="card-expiry">
+                </div>
+                <div class="form-group">
+                    <label for="card-cvv">CVV:</label>
+                    <input type="text" id="card-cvv" name="card-cvv">
+                </div>
+            </div>
+            <div class="order-summary">
+                <h3>CHI TIẾT ĐƠN HÀNG</h3>
+                <div class="cart-item">
+                    <img src="assets/images/product8.jpg" alt="Sản phẩm A" class="product-image">
+                    <div class="item-info">
+                        <h4 class="product-name">Phấn Phủ YSL All Hours Hyper Finish 01</h4>
+                            <p>Số lượng: <span class="product-quantity">2</span></p>
+                            <p>Giá: <span class="product-price">500,000 VND</span></p>
+                    </div>
+                    <a href="product-logined.html" class="details-btn">Chi tiết</a>
+                </div>
+                <div class="cart-item">
+                    <img src="assets/images/product2.jpg" alt="Sản phẩm B" class="product-image">
+                    <div class="item-info">
+                        <h4 class="product-name">Son Gel TechnoSatin</h4>
+                            <p>Số lượng: <span class="product-quantity">1</span></p>
+                            <p>Giá: <span class="product-price">300,000 VND</span></p>
+                    </div>
+                    <a href="product-logined.html" class="details-btn">Chi tiết</a>
+                </div>
+                <div class="total-price">
+                    <p><strong>Tổng số tiền: </strong><span class="total">1,300,000 VND</span></p>
+                </div>
+            </div>
+    
+            
+    
+            <div class="form-group">
+                <a class="order" href="#" onclick="Payment()">THANH TOÁN</a>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('payment-method').addEventListener('change', function () {
+            const method = this.value;
+            document.getElementById('e-wallet-info').style.display = method === 'e-wallet' ? 'block' : 'none';
+            document.getElementById('card-info').style.display = method === 'card' ? 'block' : 'none';
+        });
+
+        function Payment() {
+        alert('Đặt hàng thành công!');
+        window.location.href = "index-logined.html";
+        }
+    </script>
+    <script src="assets/js/index.js"></script>
+
+<footer>
+    <p>&copy; 2024 Perfume Store. All rights reserved.</p>
+</footer>
+</body>
+</html>
