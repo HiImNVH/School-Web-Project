@@ -1,0 +1,68 @@
+/* Thông tin khách hàng */
+.account-info{
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e52e71;
+    border-radius: 8px;
+}
+.account-info p{
+    margin-bottom: 10px;
+}
+/* Bảng  */
+h2{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+ h3{
+    font-size: 1,1em;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 25px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+table{
+    margin: 20px;
+    
+}
+table td {
+    padding: 20px;
+    text-align: left;
+}
+
+table th {
+    padding: 20px;
+    background-color: #ee8ea1;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+
+
+.total-info {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+/* Tổng tiền */
+.total-info p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding-right: 20px; 
+
+}
+
+.total-info h4 {
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}

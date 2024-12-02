@@ -5,6 +5,8 @@
 
 .inner h2 {
     margin-bottom: 15px;
+    text-decoration: underline;
+    font-size: 1.5em;
 }
 
 .admin-info {
@@ -13,14 +15,15 @@
     gap: 5px;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #faf3f4;
     border-radius: 5px;
+    border: 1px solid #e52e71;
 }
 
 .admin-info p {
-    margin: 0;
+    margin: 10px;
     font-size: 1em;
-    color: #333;
+    color: black;
 }
 
 .admin-actions {
@@ -51,7 +54,7 @@
 .action-item button {
     flex: 1;
     padding: 10px;
-    background-color: #333;
+    background-color: #ee8ea1;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -60,7 +63,7 @@
 }
 
 .action-item button:hover {
-    background-color: #555;
+    background-color: #e52e71;
 }
 
 .admin-info-edit {
@@ -69,7 +72,11 @@
     gap: 10px;
     margin-top: 20px;
 }
-
+.admin-info-edit h3{
+    text-decoration: underline;
+    font-size: 1.5em;
+    
+}
 .admin-info-edit label {
     font-weight: bold;
 }
@@ -83,7 +90,7 @@
 
 .admin-info-edit button {
     padding: 10px;
-    background-color: #333;
+    background-color: #ee8ea1;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -93,5 +100,5 @@
 }
 
 .admin-info-edit button:hover {
-    background-color: #555;
+    background-color: #e52e71;
 }

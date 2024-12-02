@@ -1,0 +1,112 @@
+/* Căn chỉnh phần chứa toàn bộ thông tin chỉnh sửa */
+.edit-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fbeaee;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edit-container h1 {
+    font-size: 2.5em;
+    color: #db4667;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.current-info{
+    padding: 10px 50px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #e52e71;
+
+}
+.current-info p{
+    font-size: 1em;
+    margin-bottom: 10PX;
+    
+}
+/* Căn chỉnh phần thông tin */
+.update-info {
+    padding: 30px 150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.update-info h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.update-info h3 {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+/* Căn chỉnh các trường nhập liệu */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    flex: 0 0 30%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 8px 30px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+/* Thêm các nút đổi */
+.change-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ee8ea1;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Khoảng cách giữa input và button */
+}
+
+.change-btn:hover {
+    background-color: #e52e71;
+}
+
+/* Nút cập nhật thông tin */
+#update-btn {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: 1.5em;
+    background-color: #ee8ea1;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    align-self: flex-end; 
+}
+
+#update-btn:hover {
+    background-color: #e52e71;
+}

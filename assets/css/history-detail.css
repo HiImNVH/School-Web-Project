@@ -1,10 +1,10 @@
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 12px;
-    background-color: #fffce1;
+    background-color: #fbeaee;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 h1 {
@@ -26,14 +26,16 @@ table {
     border-radius: 4px;
 }
 table th, table td {
-    border: 1px solid #ddd;
-    
+    border: 1px solid #ddd;   
     padding: 8px;
     text-align: left;
 }
 table th {
     background-color: #ee8ea1;
     color: white;
+}
+table td{
+    background-color: white;
 }
 .highlight {
     font-weight: bold;
@@ -70,4 +72,25 @@ table th {
 .details-btn:hover {
     background-color: #e52e71;
    
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.pending {
+    color: #ff9800;  /* "Chưa xử lý" */
+}
+
+.status.confirmed {
+    color: #2196f3;
+     /*  "Đã xác nhận" */
+}
+
+.status.delivered {
+    color: #4caf50; /* "Đã giao thành công" */
+}
+
+.status.cancelled {
+    color: #040404;  /* Màu đỏ cho trạng thái "Đã hủy" */
 }

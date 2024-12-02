@@ -1,44 +1,140 @@
+/* Tổng quát */
 .inner {
-    flex: 1;
     padding: 20px;
-    background: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.inner h2 {
+/* Phần lọc đơn hàng */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* background-color: #f8f9fa; */
+    background-color: #faf3f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     margin-bottom: 20px;
-    color: #333;
 }
 
-.history-table {
+.filter-group {
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date-range {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-range span {
+    color: #555;
+    font-weight: bold;
+}
+
+.filter-button {
+    background-color: #ee8ea1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: flex-end;
+}
+
+.filter-button:hover {
+    background-color: #e52e71;
+}
+
+/* Bảng đơn hàng */
+.order-table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 1rem;
 }
 
-.history-table th,
-.history-table td {
+.order-table th,
+.order-table td {
     border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+    padding: 12px;
+    text-align: left;
 }
 
-.history-table th {
-    background-color: #333;
-    color: #fff;
+.order-table th {
+    background-color: #fcf1f3;
+    font-weight: bold;
 }
 
-.history-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+/* .order-table tr:nth-child(even) {
+    background-color: #faf3f4;
+} */
+
+.order-table tr:hover {
+    background-color: #faf3f4;
 }
 
-.history-table tbody tr:hover {
-    background-color: #f1f1f1;
-}
-
-.history-table a {
-    color: #007bff;
+.order-table a {
+    color: #e52e71;
     text-decoration: none;
 }
 
-.history-table a:hover {
+.order-table a:hover {
     text-decoration: underline;
+}
+/* Phần chỉnh sửa trạng thái đơn hàng */
+.order-edit {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #faf3f4;
+}
+
+.order-edit h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.update-button {
+    background-color: #ee8ea1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.update-button:hover {
+    background-color: #e52e71;
 }

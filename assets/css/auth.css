@@ -2,13 +2,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: center;  
     margin: 0;
     background: linear-gradient(135deg, #ffe4b5, #ffdab9);
     background-size: cover;
 }
-
 .auth-container {
     background-color: white;
     padding: 3em;
@@ -17,28 +15,26 @@ body {
     max-width: 400px;
     width: 100%;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
 h2 {
     margin-bottom: 1.5em;
     color: #333;
     font-size: 1.8em;
     font-weight: bold;
 }
-
 .input-group {
     margin-bottom: 1.2em;
     text-align: left;
 }
-
 label {
     display: block;
     font-size: 1em;
     margin-bottom: 0.5em;
     color: #333;
-    font-weight: bold
+    font-weight: bold;
 }
-
 input {
     width: 100%;
     padding: 0.8em;
@@ -47,12 +43,10 @@ input {
     font-size: 1em;
     transition: all 0.3s ease;
 }
-
 input:focus {
     border-color: #ff8a00;
     outline: none;
 }
-
 button {
     width: 100%;
     padding: 1em;
@@ -65,33 +59,26 @@ button {
     transition: background-color 0.3s ease;
     margin-bottom: 1em;
 }
-
 button:hover {
     background-color: #e52e71;
 }
-
 p {
     font-size: 0.9em;
 }
-
 a {
     color: #e52e71;
     text-decoration: none;
     font-weight: bold;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
 .form {
     display: none;
 }
-
 .form.active {
     display: block;
 }
-
 .hidden {
     display: none;
 }

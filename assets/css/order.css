@@ -1,6 +1,6 @@
-
+/* General Form Styles */
 .order-form {
-    background-color: #fffce1;
+    background-color: #fbeaee;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,26 +9,29 @@
     padding: 40px 60px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    /* transform: translateX(100px); Di chuyển form 100px sang phải */
+    min-height: 100vh;
 }
 
-.order-form h2 {
+.order-form h1 {
     font-size: 1.8em;
     font-weight: bold;
-    margin-bottom: 40px;
-    color: #333;
+    margin-bottom: 20px;
+    color: #db4456;
     text-align: center;
     margin-top: 5px;
 }
 
-.form-group {
+
+.input-group, .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
     width: 100%;
-    margin-bottom: 15px;
 }
 
 .order-form label {
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 8px;
     color: #444;
     display: block;
@@ -46,13 +49,46 @@
     transition: 0.3s;
 }
 
-.order-form input:focus,
-.order-form select:focus,
-.order-form textarea:focus {
-    border-color: #ee8ea1;
-    box-shadow: 0 0 8px rgba(238, 142, 161, 0.4);
+
+
+/* Address section radio buttons alignment */
+.address-section h2 {
+    font-size: 1.1em;
+}
+.address-section label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #686868;
+
 }
 
+.address-section input[type="radio"] {
+    margin-right: 5px; 
+    width: 10%;
+    
+}
+
+.address-form{
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-color: #e52e71;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pay-form{
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-color: #ee8ea1;
+}
+/* chi tiết */
 .order-summary {
     background-color: #ffffff;
     padding: 20px;
@@ -68,6 +104,7 @@
     overflow: hidden;
 }
 
+/* Order Summary */
 .order-summary h3 {
     text-decoration: underline;
     font-size: 1.2em;
@@ -116,20 +153,10 @@
     font-size: 1.1em;
     font-weight: bold;
     color: #444;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
 }
 
-.product-details {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-    font-size: 0.95em;
-    color: #666;
-}
-
-.details-btn{
+.details-btn {
     padding: 4px 8px;
     font-size: 1em;
     border-radius: 6px;
@@ -137,20 +164,6 @@
     transition: 0.3s;
     display: flex;
     justify-content: center;
-   
-}
-.order {
-    padding: 8px 16px;
-    font-size: 1.2em;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.details-btn {
     background-color: #ee8ea1;
     color: white;
     border: none;
@@ -163,12 +176,17 @@
 }
 
 .order {
+    padding: 8px 16px;
+    font-size: 1.2em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
     background-color: #ee8ea1;
     color: white;
     border: none;
-    width: auto;
-    display: flex;
-    
 }
 
 .order:hover {
@@ -187,6 +205,10 @@
     display: none;
 }
 
+/* Select Styling */
 select {
     appearance: none;
+}
+.defaultAddressText {
+    margin-bottom: 10px; /* Space between each address line */
 }
