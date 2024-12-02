@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thống kê Kinh Doanh</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/admin-static.css">
+</head>
+<body>
+    <header>
+        <a href="admin-logined.html" class="home-button">Trang chủ</a>
+        <h1>Thống kê Kinh Doanh</h1>
+        <div class="user-dropdown">
+            <span class="welcome-message">Chào Nguyễn Văn A</span>
+            <div class="dropdown-content">
+                <a href="admin-admin.html">Chỉnh sửa thông tin quản trị</a>
+                <a href="#">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="admin-user.html">Quản lí người dùng</a></li>
+                <li><a href="admin-addproduct.html">Thêm sản phẩm</a></li>
+                <li><a href="admin-change-product.html">Chỉnh sửa/xóa sản phẩm</a></li>
+                <li><a href="admin-history.html">Quản lí đơn hàng</a></li>
+                <li><a href="admin-statics.html">Thống kê </a></li>
+            </ul>
+        </nav>
+
+        <div class="inner" >
+            <div class="stats">
+                <form>
+                    <label for="start-date">Từ ngày:</label>
+                    <input type="date" id="start-date" name="start-date">
+                    <label for="end-date">Đến ngày:</label>
+                    <input type="date" id="end-date" name="end-date">
+                    <label for="high-low-sort">Sắp xếp</label>
+                    <select name="high-low-sort" id="high-low-sort">
+                        <option value="high-low">Cao - Thấp</option>
+                        <option value="low-high">Thấp - cao</option>
+                    </select>
+                    <button type="submit">Thống kê</button>
+                </form>
+            </div>
+
+            <!-- Thống kê mặt hàng -->
+            <div class="static">
+                <h2 >Thống kê mặt hàng</h2>
+                <table class="product-statics">
+                    <tr>
+                        <th>Mã sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>SL bán ra</th>
+                        <th>Tổng thu</th>
+                        <th>Hóa đơn</th>
+                    </tr>
+                    <tr>
+                        <td>MT01</td>
+                        <td>Phấn Phủ Bột Nars Light Reflecting Setting Loose Powder</td>
+                        <td>120</td>
+                        <td>24,000,000 VND</td>
+                        <td><a href="admin-product-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>MT02</td>
+                        <td>Phấn Phủ Bột Perfect Diary Weightless Soft Velvet Blurring Loose Powder</td>
+                        <td>80</td>
+                        <td>32,000,000 VND</td>
+                        <td><a href="admin-product-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>MT03</td>
+                        <td>Phấn Phủ Bột Nars Light Reflecting Setting Loose Powder</td>
+                        <td>120</td>
+                        <td>24,000,000 VND</td>
+                        <td><a href="admin-product-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>MT04</td>
+                        <td>Phấn Phủ Bột Nars Light Reflecting Setting Loose Powder</td>
+                        <td>120</td>
+                        <td>24,000,000 VND</td>
+                        <td><a href="admin-product-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>MT05</td>
+                        <td>Phấn Phủ Bột Nars Light Reflecting Setting Loose Powder</td>
+                        <td>120</td>
+                        <td>24,000,000 VND</td>
+                        <td><a href="admin-product-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                </table>
+                <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-button" disabled>« Trước</button>
+                <button class="page-button active">1</button>
+                <button class="page-button">2</button>
+                <button class="page-button">3</button>
+                <button class="page-button">Tiếp »</button>
+            </div>
+            </div>
+
+            <!-- Mặt hàng bán chạy/ế nhất -->
+            <div class="most-sold-wrapper">
+                <div class="most-sold">
+                    <h3>Sản phẩm bán nhiều nhất</h3>
+                    <img src="assets/images/product1.jpg" alt="Nhiều nhất">
+                    <div class="most-sold-content">
+                        <p>Tên sản phẩm: Nước Hoa Burberry For Women EDP</p>
+                        <p>Số lượng: 30</p>
+                        <p>Tổng doanh thu: 100,000 VND</p>
+                    </div>
+                </div>
+            
+                <div class="most-sold">
+                    <h3>Sản phẩm bán ít nhất</h3>
+                    <img src="assets/images/product1.jpg" alt="Ít nhất">
+                    <div class="most-sold-content">
+                        <p>Tên sản phẩm: Son 3CE Soft Matte Red Muse</p>
+                        <p>Số lượng: 5</p>
+                        <p>Tổng doanh thu: 10,000 VND</p>
+                    </div>
+                </div>
+            </div>
+            
+ 
+            <!-- Thống kê toàn bộ khách hàng -->
+            <div class="static">
+                <h2>Thống kê toàn bộ khách hàng</h2>
+                <table class="user-statics">
+                    <tr>
+                        <th>Mã KH</th>
+                        <th>Tên khách hàng</th>
+                        <th>Email</th>
+                        <th>Số đơn hàng</th>
+                        <th>Tổng doanh thu</th>
+                        <th>Hóa đơn</th>
+                    </tr>
+                    <tr>
+                        <td>KH001</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>nguyenvana@example.com</td>
+                        <td>45</td>
+                        <td>50,000,000 VND</td>
+                        <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>KH002</td>
+                        <td>Trần Thị B</td>
+                        <td>tranthib@example.com</td>
+                        <td>30</td>
+                        <td>25,000,000 VND</td>
+                        <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>KH003</td>
+                        <td>Phạm Minh C</td>
+                        <td>phamminhc@example.com</td>
+                        <td>40</td>
+                        <td>45,000,000 VND</td>
+                        <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>KH004</td>
+                        <td>Hoàng Thị D</td>
+                        <td>hoangthid@example.com</td>
+                        <td>25</td>
+                        <td>20,000,000 VND</td>
+                        <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>KH005</td>
+                        <td>Lê Văn E</td>
+                        <td>levane@example.com</td>
+                        <td>35</td>
+                        <td>30,000,000 VND</td>
+                        <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>KH006</td>
+                        <td>Ngô Thị F</td>
+                        <td>ngothif@example.com</td>
+                        <td>50</td>
+                        <td>60,000,000 VND</td>
+                        <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                    <tr>
+                        <td>KH007</td>
+                        <td>Đỗ Anh G</td>
+                        <td>doanhg@example.com</td>
+                        <td>20</td>
+                        <td>18,000,000 VND</td>
+                        <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                    </tr>
+                </table>
+                <!-- Pagination cho bảng toàn bộ khách hàng -->
+                <div class="pagination">
+                    <button class="page-button" disabled>« Trước</button>
+                    <button class="page-button active">1</button>
+                    <button class="page-button">2</button>
+                    <button class="page-button">3</button>
+                    <button class="page-button">Tiếp »</button>
+                </div>
+            </div>
+                        <!-- 5 khách hàng mua nhiều -->
+                <div class="static">
+                    <h2>Những khách hàng mua nhiều nhất</h2>
+                    <table class="user-statics">
+                        <tr>
+                            <th>Mã KH</th>
+                            <th>Tên khách hàng</th>
+                            <th>Email</th>
+                            <th>Số đơn hàng</th>
+                            <th>Tổng doanh thu</th>
+                            <th>Hóa đơn</th>
+                        </tr>
+                        <tr>
+                            <td>KH103</td>
+                            <td>Trần Minh Hà</td>
+                            <td>tranminhha@example.com</td>
+                            <td>50</td>
+                            <td>60,000,000 VND</td>
+                            <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                        </tr>
+                        <tr>
+                            <td>KH101</td>
+                            <td>Nguyễn Hồng Nhung</td>
+                            <td>nhungnguyen@example.com</td>
+                            <td>38</td>
+                            <td>42,500,000 VND</td>
+                            <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                        </tr>
+                        <tr>
+                            <td>KH107</td>
+                            <td>Vũ Thanh Hương</td>
+                            <td>thanhhuong@example.com</td>
+                            <td>35</td>
+                            <td>37,200,000 VND</td>
+                            <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                        </tr>
+                        <tr>
+                            <td>KH102</td>
+                            <td>Phạm Văn Thái</td>
+                            <td>phamtthai@example.com</td>
+                            <td>20</td>
+                            <td>15,750,000 VND</td>
+                            <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                        </tr>
+                        <tr>
+                            <td>KH104</td>
+                            <td>Lê Quốc Bảo</td>
+                            <td>quocbao@example.com</td>
+                            <td>12</td>
+                            <td>9,800,000 VND</td>
+                            <td><a href="admin-user-bill.html">Xem hóa đơn</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

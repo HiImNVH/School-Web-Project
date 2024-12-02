@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meowti's Cosmetics Store </title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/user-user.css">
+</head>
+<body>
+        <header>
+            <div class="header-container">
+                <nav>
+                    <ul>
+                        <div class="logo-container">
+                            <a href="index-logined.html">
+                            <img src="assets/images/5.jpg" alt="Logo nhỏ">
+                            </a>
+                        </div>
+                        <form class="search-form" action="search-logined.html" method="GET">
+                            <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
+                            <button type="submit">Tìm kiếm</button>
+                        </form>
+                        <li><a href="perfume-logined.html">NƯỚC HOA</a></li>
+                        <li><a href="lipstick-logined.html">SON MÔI</a></li>
+                        <li><a href="powder-logined.html">PHẤN</a></li>
+                        <li><a href="cosmetics-logined.html">MỸ PHẨM KHÁC</a></li>
+                    </ul>
+                </nav>
+                <div class="header">
+                    <a href="shoppingcart-logined.html" class="cart-btn">GIỎ HÀNG</a>
+                    <div class="welcome-btn logined-btn">
+                        Chào User1
+                        <div class="dropdown-content">
+                            <a href="history-logined.html">LỊCH SỬ MUA HÀNG</a>
+                            <a href="#" onclick="logout()">ĐĂNG XUẤT</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </header>
+
+        <div class="edit-container">
+            <h1>THÔNG TIN NGƯỜI DÙNG</h1>
+            <!-- Phần hiển thị thông tin hiện tại -->
+            <div class="current-info">
+                <p><strong>Tên tài khoản:</strong> <span id="current-username">nguyenvana</span></p>
+                <p><strong>Họ và tên:</strong> <span id="current-name">Nguyễn Văn A</span></p>
+                <p><strong>Số điện thoại:</strong> <span id="current-phone">0123456789</span></p>
+                <p><strong>Địa chỉ email:</strong> <span id="current-email">example@email.com</span></p>
+                <p><strong>Địa chỉ:</strong> <span id="current-address">123 Đường ABC, TP XYZ</span></p>
+            </div>
+        
+            <!-- Phần sửa thông tin người dùng -->
+            <div class="update-info">
+                <h2>Sửa Thông Tin</h2>
+                <div >
+                    <h3>Thông tin người dùng</h3>
+                    <div class="input-group">
+                        <label for="name">Họ và tên:</label>
+                        <input type="text" id="name" placeholder="Nhập họ và tên mới">
+                        <button type="button" class="change-btn">Đổi</button>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Số điện thoại:</label>
+                        <input type="tel" id="phone" placeholder="Nhập số điện thoại mới">
+                        <button type="button" class="change-btn">Đổi</button>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Địa chỉ email:</label>
+                        <input type="email" id="email" placeholder="Nhập email mới">
+                        <button type="button" class="change-btn">Đổi</button>
+                    </div>
+                    <div class="input-group">
+                        <label for="address">Địa chỉ:</label>
+                        <input type="text" id="address" placeholder="Nhập địa chỉ mới">
+                        <button type="button" class="change-btn">Đổi</button>
+                    </div>
+                    <!-- Phần đổi thông tin tài khoản -->
+                    <h3>Thông tin tài khoản</h3>
+                    <div class="input-group">
+                        <label for="username">Tên tài khoản:</label>
+                        <input type="text" id="username" placeholder="Nhập tên tài khoản mới">
+                        <button type="button" class="change-btn">Đổi</button>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Mật khẩu mới:</label>
+                        <input type="password" id="password" placeholder="Nhập mật khẩu mới">
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Xác nhận mật khẩu:</label>
+                        <input type="password" id="confirm-password" placeholder="Nhập lại mật khẩu mới">
+                        <button type="button" class="change-btn">Đổi</button>
+                    </div>
+                    <button type="submit" id="update-btn">Lưu</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer>
+            <p>&copy; 2024 Meowti's Cosmetics Store. All rights reserved.</p>
+        </footer>
+        <script src="assets/js/index.js"></script>
+</body>
+</html>

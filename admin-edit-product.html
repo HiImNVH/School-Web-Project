@@ -1,109 +1,68 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết sản phẩm - Perfume Store</title>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
     <link rel="stylesheet" href="assets/css/admin-edit-product.css">
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <nav>
-                <ul>
-                    <div class="logo-container">
-                        <a href="index.html">
-                        <img src="assets/images/5.jpg" alt="Logo nhỏ">
-                        </a>
-                    </div>
-                </form>
-                <li><a href="#">NƯỚC HOA</a></li>
-                <li><a href="#">SON MÔI</a></li>
-                <li><a href="#">PHẤN</a></li>
-                <li><a href="#">MỸ PHẨM KHÁC</a></li>
-                </ul>
-            </nav>
-            <div class="header">
-                <div class="welcome-btn logined-btn">
-                    <a href="admin-logined.html">Trở về</a>
-                </div>
-                </div>
+        <a href="admin-logined.html" class="home-button">Trang chủ</a>
+        <h1>Quản lí sản phẩm</h1>
+        <div class="user-dropdown">
+            <span class="welcome-message">Chào Nguyễn Văn A</span>
+            <div class="dropdown-content">
+                <a href="admin-admin.html">Chỉnh sửa thông tin quản trị</a>
+                <a href="#">Đăng xuất</a>
+            </div>
         </div>
     </header>
 
-    <div class="inner">
-        <section class="product-detail">
-            <div class="product-detail-container">
-                <div class="product-image">
-                    <img src="assets/images/product10.jpg" alt="Nước Hoa Burberry For Women EDP" class="product-img">
-                </div>
-                <form class="add-product-form">
-                    <label for="product-name">Tên:</label>
-                    <input type="text" id="product-name" name="product-name" placeholder="Nhập tên muốn hiển thị.">
-    
-                    <label for="product-price">Giá (VND):</label>
-                    <input type="number" id="product-price" name="product-price" placeholder="Nhập giá mong muốn.">
-    
-                    <label for="product-description">Mô tả:</label>
-                    <textarea id="product-description" name="product-description" rows="4" placeholder="Nhập mô tả"></textarea>
-    
-                    <label for="product-category">Danh mục:</label>
-                    <select id="product-category" name="product-category">
-                        <option value="perfume">Nước hoa</option>
-                        <option value="lipstick">Son môi</option>
-                        <option value="chalk">Phấn</option>
-                        <option value="other">Mĩ phẩm khác</option>
-                    </select>
-    
-                    <label for="product-image">Ảnh:</label>
-                    <input type="file" id="product-image" name="product-image" accept="image/*">
-                    <button>Chỉnh sửa sản phẩm</button>
-                </form>
-            </div>
-        </section>
-        <section class="related-products">
-            <h2>Sản phẩm liên quan</h2>
-            <div class="grid-container">
-                <div class="product-item">
-                    <a href="product.html?id=1">
-                        <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
-                        <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
-                        <p>3,500,000 VND</p>
-                    </a>
-                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
-                </div>
-                <div class="product-item">
-                    <a href="product.html?id=2">
-                        <img src="assets/images/product2.jpg" alt="Sản phẩm 2">
-                        <h3>Son Gel TechnoSatin</h3>
-                        <p>800,000 VND</p>
-                    </a>
-                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
-                </div>
-                <div class="product-item">
-                    <a href="product.html?id=3">
-                        <img src="assets/images/product3.jpg" alt="Sản phẩm 3">
-                        <h3>Son Dior</h3>
-                        <p>850,000 VND</p>
-                    </a>
-                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
-                </div>
-                <div class="product-item">
-                    <a href="product.html?id=4">
-                            <img src="assets/images/product4.jpg" alt="Sản phẩm 4">
-                            <h3>Nước hoa nữ Dior Miss Dior Blooming Bouquet EDT</h3>
-                            <p>2,850,000 VND</p>
-                        </a>
-                    <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
-                </div>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="admin-user.html">Quản lí người dùng</a></li>
+                <li><a href="admin-addproduct.html">Thêm sản phẩm</a></li>
+                <li><a href="admin-change-product.html">Chỉnh sửa/xóa sản phẩm</a></li>
+                <li><a href="admin-history.html">Quản lí đơn hàng</a></li>
+                <li><a href="admin-statics.html">Thống kê mặt hàng</a></li>
+            </ul>
+        </nav>
 
-            </div>
-        </section>
+        <div class="inner">
+            <section class="product-detail">
+                <div class="product-detail-container">
+                    <!-- Ảnh sản phẩm -->
+                    <div class="product-image">
+                        <img src="assets/images/product10.jpg" alt="Nước Hoa Burberry For Women EDP" class="product-img">
+                        <button class="edit-button">Chỉnh sửa ảnh</button>
+                    </div>
+                    
+                    <!-- Thông tin sản phẩm -->
+                    <div class="product-info">
+                        <!-- Tên sản phẩm -->
+                        <div class="editable-field">
+                            <input type="text" class="text-input" placeholder="Nước Hoa Burberry For Women EDP">
+                            <button class="edit-button">Sửa</button>
+                        </div>
+                        <!-- Giá sản phẩm -->
+                        <div class="editable-field">
+                            <input type="text" class="text-input" placeholder="1,280,000 VND">
+                            <button class="edit-button">Sửa</button>
+                        </div>
+                        <!-- Mô tả sản phẩm -->
+                        <div class="editable-field">
+                            <textarea class="text-area" rows="4" placeholder="Nước Hoa Burberry For Women EDP 100ml là chai nước hoa cho nữ sang trọng, mùi hương cao cấp đến từ thương hiệu Burberry của Anh. Burberry For Women Eau De Parfum tạo cảm giác khá sang trọng và nữ tính, rất thích hợp cho những cô nàng ngọt ngào và mơ mộng."></textarea>
+                            <button class="edit-button">Sửa</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
     </div>
-
-    <footer>
-        <p>&copy; 2024 Perfume Store. All rights reserved.</p>
-    </footer>
-
 </body>
 </html>

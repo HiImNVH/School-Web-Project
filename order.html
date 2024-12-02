@@ -32,34 +32,59 @@
                 <div class="welcome-btn">
                     Chào User1
                     <div class="dropdown-content">
-                        <a href="history-logined.html">Lịch sử mua hàng</a>
-                        <a href="#" onclick="logout()">Đăng xuất</a>
+                        <a href="user-user.html">SỬA THÔNG TIN</a>
+                        <a href="history-logined.html">LỊCH SỬ MUA HÀNG</a>
+                        <a href="#" onclick="logout()">ĐĂNG XUẤT</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <div class="order-form">
-        <h2>THÔNG TIN GIAO HÀNG</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Họ tên:</label>
-                <input type="text" id="name" name="name" placeholder="Tên người nhận...">
-            </div>
-            <div class="form-group">
-                <label for="phone">Số điện thoại:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Số điện thoại nhận hàng..." pattern="[0-9]{10,11}">
-            </div>
-            <div class="form-group">
-                <label for="address">Địa chỉ:</label>
-                <textarea id="address" name="address" placeholder="Địa chỉ nhận hàng..." rows="3"></textarea>
-            </div>
+        <h1>THÔNG TIN GIAO HÀNG</h1>
+        <div>
+    <div class="address-section">
+      <h2>Địa chỉ giao hàng</h2>
+    <label>
+        <input type="radio" name="addressOption" id="defaultAddress" onclick="toggleAddressOptions()" checked>
+        Sử dụng địa chỉ mặc định
+    </label>
+    <div class="address-form"  id="defaultAddressText">
+        <p>Nguyễn Văn A</p>
+        <p>0123456789</p>
+        <p>273 An Dương Vương, Quận 5, TP.HCM</p>
+    </div>
+    
+
+    <label>
+        <input type="radio" name="addressOption" onclick="toggleAddressOptions()">
+        Nhập địa chỉ khác
+    </label>
+    <div id="otherAddress" class="hidden">
+       <div class="address-form">
+         <div class="input-group">
+            <label for="name">Tên người nhận:</label>
+            <input type="text" id="name" placeholder="Tên người nhận">
+           </div>
+           <div class="input-group">
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" id="phone" placeholder="Số điện thoại">
+          </div>
+          <div class="input-group">
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address" placeholder="Địa chỉ giao hàng">
+          </div>
+       </div>
+    </div>
+</div>
+
+    
             <div class="form-group">
                 <label for="note">Ghi chú:</label>
                 <input type="text" id="note" name="note" placeholder="Ghi chú...">
             </div>
             <div class="form-group">
-                <label for="payment-method">Phương thức thanh toán:</label>
+                <label for="payment-method">Phương thức thanh toán: </label>
                 <select id="payment-method" name="payment-method">
                     <option value="">--Chọn--</option>
                     <option value="cod">Thanh toán khi nhận hàng (COD)</option>
@@ -69,6 +94,7 @@
             </div>
     
             <div id="e-wallet-info" class="hidden">
+               <div class="pay-form">
                 <div class="form-group">
                     <label for="wallet-provider">Nhà cung cấp ví:</label>
                     <select id="wallet-provider" name="wallet-provider">
@@ -86,24 +112,27 @@
                     <label for="wallet-accountid">Số tài khoản ví:</label>
                     <input type="text" id="wallet-accountid" name="wallet-accountid">
                 </div>
+               </div>
             </div>
     
             <div id="card-info" class="hidden">
-                <div class="form-group">
-                    <label for="card-name">Tên thẻ:</label>
-                    <input type="text" id="card-name" name="card-name">
-                </div>
-                <div class="form-group">
-                    <label for="card-number">Số thẻ:</label>
-                    <input type="text" id="card-number" name="card-number">
-                </div>
-                <div class="form-group">
-                    <label for="card-expiry">Ngày hết hạn (MM/YY):</label>
-                    <input type="text" id="card-expiry" name="card-expiry">
-                </div>
-                <div class="form-group">
-                    <label for="card-cvv">CVV:</label>
-                    <input type="text" id="card-cvv" name="card-cvv">
+                <div class="pay-form">
+                    <div class="form-group">
+                        <label for="card-name">Tên thẻ:</label>
+                        <input type="text" id="card-name" name="card-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Số thẻ:</label>
+                        <input type="text" id="card-number" name="card-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="card-expiry">Ngày hết hạn (MM/YY):</label>
+                        <input type="text" id="card-expiry" name="card-expiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="card-cvv">CVV:</label>
+                        <input type="text" id="card-cvv" name="card-cvv">
+                    </div>
                 </div>
             </div>
             <div class="order-summary">
@@ -136,10 +165,20 @@
             <div class="form-group">
                 <a class="order" href="#" onclick="Payment()">THANH TOÁN</a>
             </div>
-        </form>
+        </div>
     </div>
     
     <script>
+        function toggleAddressOptions() {
+    const otherAddress = document.getElementById('otherAddress');
+    const defaultAddress = document.getElementById('defaultAddress').checked;
+    const defaultAddressText = document.getElementById('defaultAddressText');
+    
+    // Nếu chọn địa chỉ mặc định thì ẩn địa chỉ khác và ngược lại
+    otherAddress.classList.toggle('hidden', defaultAddress);
+    defaultAddressText.classList.toggle('hidden', !defaultAddress);
+}
+
         document.getElementById('payment-method').addEventListener('change', function () {
             const method = this.value;
             document.getElementById('e-wallet-info').style.display = method === 'e-wallet' ? 'block' : 'none';

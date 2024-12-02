@@ -22,10 +22,10 @@
                         <input type="text" name="query" placeholder="Tìm kiếm sản phẩm...">
                         <button type="submit">Tìm kiếm</button>
                     </form>                
-                    <li><a href="perfume-logined.html?category=product/perfume">NƯỚC HOA</a></li>
-                    <li><a href="perfume-logined.html?category=product/lipstick">SON MÔI</a></li>
-                    <li><a href="perfume-logined.html?category=product/powder">PHẤN</a></li>
-                    <li><a href="perfume-logined.html?category=product/cosmetics">MỸ PHẨM KHÁC</a></li>
+                    <li><a href="perfume-logined.html">NƯỚC HOA</a></li>
+                    <li><a href="lipstick-logined.html">SON MÔI</a></li>
+                    <li><a href="powder-logined.html">PHẤN</a></li>
+                    <li><a href="cosmetics-logined.html">MỸ PHẨM KHÁC</a></li>
                 </ul>
             </nav>
             <div class="header">
@@ -33,7 +33,8 @@
                 <div class="welcome-btn">
                     Chào User1
                     <div class="dropdown-content">
-                        <a href="#" onclick="logout()">Đăng xuất</a>
+                        <a href="user-user.html">SỬA THÔNG TIN</a>
+                        <a href="#" onclick="logout()">ĐĂNG XUẤT</a>
                     </div>
                 </div>
             </div>
@@ -47,46 +48,52 @@
                 <tr>
                     <th>Mã đơn hàng</th>
                     <th>Ngày mua</th>
-                    <th>Sản phẩm</th>
                     <th>Tổng số tiền</th>
+                    <th>Trạng thái</th>
                     <th>Chi tiết</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>#MWTI02</td>
-                    <td>06/10/2024</td>
-                    <td>
-                        <ul>
-                            <li>
-                                <img src="assets/images/product9.jpg" alt="Product 1">
-                                <span>Son 3CE Soft Matte Red Muse</span>
-                            </li>
-                            <li>
-                                <img src="assets/images/product10.jpg" alt="Product 2">
-                                <span>Nước Hoa Burberry For Women EDP</span>
-                            </li>
-                        </ul>
-                    </td>
-                    <td>2,839,000 VND</td>
+                    <td>#MWTI03</td>
+                    <td>05/11/2024</td>
+                    <td>1,500,000 VND</td>
+                    <td class="status pending">Chưa xử lý</td>
                     <td><a href="history-detail.html" class="details-btn">Xem chi tiết</a></td>
                 </tr>
                 <tr>
-                    <td>#MWTI01</td>
-                    <td>10/12/2023</td>
-                    <td>
-                        <ul>
-                            <li>
-                                <img src="assets/images/product7.jpg" alt="Product 3">
-                                <span>Phấn Phủ Bột Perfect Diary Weightless Soft Velvet Blurring Loose Powder</span>
-                            </li>
-                            <li>
-                                <img src="assets/images/product1.jpg" alt="Product 4">
-                                <span>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</span>
-                            </li>
-                        </ul>
-                    </td>
-                    <td>2,300,000 VND</td>
+                    <td>#MWTI07</td>
+                    <td>30/06/2024</td>
+                    <td>2,500,000 VND</td>
+                    <td class="status confirmed">Đã xác nhận</td>
+                    <td><a href="history-detail.html" class="details-btn">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>#MWTI08</td>
+                    <td>22/05/2024</td>
+                    <td>1,250,000 VND</td>
+                    <td class="status delivered">Đã giao thành công</td>
+                    <td><a href="history-detail.html" class="details-btn">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>#MWTI09</td>
+                    <td>18/04/2024</td>
+                    <td>2,150,000 VND</td>
+                    <td class="status cancelled">Đã hủy</td>
+                    <td><a href="history-detail.html" class="details-btn">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>#MWTI10</td>
+                    <td>10/03/2024</td>
+                    <td>3,000,000 VND</td>
+                    <td class="status delivered">Đã giao thành công</td>
+                    <td><a href="history-detail.html" class="details-btn">Xem chi tiết</a></td>
+                </tr>
+                <tr>
+                    <td>#MWTI11</td>
+                    <td>28/02/2024</td>
+                    <td>2,700,000 VND</td>
+                    <td class="status delivered">Đã giao thành công</td>
                     <td><a href="history-detail.html" class="details-btn">Xem chi tiết</a></td>
                 </tr>
             </tbody>

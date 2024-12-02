@@ -33,6 +33,7 @@
                 <div class="welcome-btn logined-btn">
                     Chào User1
                     <div class="dropdown-content">
+                        <a href="user-user.html">SỬA THÔNG TIN</a>
                         <a href="history-logined.html">LỊCH SỬ MUA HÀNG</a>
                         <a href="#" onclick="logout()">ĐĂNG XUẤT</a>
                     </div>
@@ -44,7 +45,7 @@
         
         <div class="lowerheader-inner">
             <div class="lowerheader-textbox">
-                <h1 class="lowerheader-logo"><span style="color: #f6d9f2">Meow</span><span style="color: #f6d9f2">ti's cosmetics store</span></h1>
+                <h1 class="lowerheader-logo"><span style="color: #f6d9f2; font-family: 'Times New Roman', Times, sans-serif;">Meow</span><span style="color: #f6d9f2;  font-family: 'Times New Roman', Times, sans-serif;">ti's cosmetics store</span></h1>
                 <h5>Cửa hàng mỹ phẩm thời trang, uy tín</h5>
             </div>
             <div class="image-container">
@@ -56,6 +57,8 @@
     <div class="inner">
         <div class="advanced-search">
             <form class="search-form" action="search-logined.html" method="GET">
+                 <!-- Tìm kiếm theo tên -->
+            <input type="text" name="name" placeholder="Nhập tên sản phẩm..." class="search-input" />
                 <!-- Tìm kiếm theo thể loại -->
                 <select name="category">
                     <option value="">Chọn loại sản phẩm</option>
@@ -74,14 +77,6 @@
                     <option value="1000000+">Trên 1,000,000 VND</option>
                 </select>
                 
-                <!-- Tìm kiếm theo đánh giá -->
-                <select name="rating">
-                    <option value="">Chọn dòng sản phẩm</option>
-                    <option value="5">Cao cấp</option>
-                    <option value="4">Trung cấp</option>
-                    <option value="3">Phổ thông</option>
-                </select>
-    
                 <!-- Nút tìm kiếm -->
                 <button type="submit">Tìm kiếm</button>
             </form>
@@ -90,7 +85,7 @@
         <section class="products">
             <div class="grid-container">
                 <div class="product-item">
-                    <a href="product.html?id=1">
+                    <a href="product-logined.html?id=1">
                         <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
                         <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
                         <p>3,500,000 VND</p>
@@ -98,71 +93,71 @@
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=2">
-                        <img src="assets/images/product2.jpg" alt="Sản phẩm 2">
-                        <h3>Son Gel TechnoSatin</h3>
-                        <p>800,000 VND</p>
+                    <a href="product-logined.html?id=2">
+                        <img src="assets/images/product13.jpg" alt="Sản phẩm 2">
+                        <h3>Nước Hoa Nữ Yves Saint Laurent YSL Mon Paris Eau De Parfum</h3>
+                        <p>2,600,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=3">
-                        <img src="assets/images/product3.jpg" alt="Sản phẩm 3">
-                        <h3>Son Dior</h3>
-                        <p>850,000 VND</p>
+                    <a href="product-logined.html?id=3">
+                        <img src="assets/images/product14.jpg" alt="Sản phẩm 3">
+                        <h3>Nước Hoa Nữ Marc Jacobs Perfect Intense Eau De Parfum</h3>
+                        <p>2,300,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=4">
+                    <a href="product-logined.html?id=4">
                         <img src="assets/images/product4.jpg" alt="Sản phẩm 4">
-                        <h3>Nước hoa nữ Dior Miss Dior Blooming Bouquet EDT</h3>
+                        <h3>Nước hoa nữ Dior Miss Dior Blooming Bouquet</h3>
                         <p>2,850,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=5">
+                    <a href="product-logined.html?id=5">
                         <img src="assets/images/product5.jpg" alt="Sản phẩm 5">
-                        <h3>Miss Di</h3>
+                        <h3>Miss Dior</h3>
                         <p>600,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=6">
-                        <img src="assets/images/product6.jpg" alt="Sản phẩm 6">
-                        <h3>Phấn Phủ Bột Nars Light Reflecting Setting Loose Powder</h3>
-                        <p>200,000 VND</p>
+                    <a href="product-logined.html?id=6">
+                        <img src="assets/images/product15.jpg" alt="Sản phẩm 6">
+                        <h3>Nước Hoa Nữ Chloe Eau De Parfum EDP</h3>
+                        <p>2,450,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=7">
-                        <img src="assets/images/product7.jpg" alt="Sản phẩm 7">
-                        <h3>Phấn Phủ Bột Perfect Diary Weightless Soft Velvet Blurring Loose Powder</h3>
-                        <p>199,000 VND</p>
+                    <a href="product-logined.html?id=7">
+                        <img src="assets/images/product16.jpg" alt="Sản phẩm 7">
+                        <h3>Nước Hoa Nữ Jean Paul Gaultier So Scandal Eau De Parfum</h3>
+                        <p>2,150,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=8">
-                        <img src="assets/images/product8.jpg" alt="Sản phẩm 8">
-                        <h3>Phấn Phủ YSL All Hours Hyper Finish 01  </h3>
+                    <a href="product-logined.html?id=8">
+                        <img src="assets/images/product17.jpg" alt="Sản phẩm 8">
+                        <h3>Nước Hoa Nữ Gucci Bloom Eau De Toilette </h3>
                         <p>1,499,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=9">
-                        <img src="assets/images/product9.jpg" alt="Sản phẩm 9">
-                        <h3>Son 3CE Soft Matte Red Muse</h3>
-                        <p>279,000 VND</p>
+                    <a href="product-logined.html?id=9">
+                        <img src="assets/images/product18.jpg" alt="Sản phẩm 9">
+                        <h3>Nước Hoa Nữ Lancôme La Vie Est Belle EDP</h3>
+                        <p>2,350,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=10">
+                    <a href="product-logined.html?id=10">
                         <img src="assets/images/product10.jpg" alt="Sản phẩm 10">
                         <h3>Nước Hoa Burberry For Women EDP</h3>
                         <p>1,280,000 VND</p>
@@ -170,17 +165,17 @@
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=11">
-                        <img src="assets/images/product11.jpg" alt="Sản phẩm 11">
-                        <h3>Son Tint Carslan Lip Glow Serum</h3>
-                        <p>229,000 VND</p>
+                    <a href="product-logined.html?id=11">
+                        <img src="assets/images/product19.jpg" alt="Sản phẩm 11">
+                        <h3>Nước Hoa Nữ Moschino Toy 2 Bubble Gum Eau De Toilette</h3>
+                        <p>1,130,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
                 </div>
                 <div class="product-item">
-                    <a href="product.html?id=12">
-                        <img src="assets/images/product12.jpg" alt="Sản phẩm 12">
-                        <h3>Phấn phủ Dior Forever Natural Velvet Transfer-Proof Compact Foundation</h3>
+                    <a href="product-logined.html?id=12">
+                        <img src="assets/images/product20.jpg" alt="Sản phẩm 12">
+                        <h3>Nước Hoa Nữ Maison Margiela Replica Flower Market Eau De Toilette</h3>
                         <p>2.250,000 VND</p>
                     </a>
                     <button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ</button>
@@ -189,15 +184,16 @@
         </section>
     </div>
     <div class="pagination">
-        <a href="perfume-logined.html?page=1"><button>1</button></a>
-        <a href="perfume-logined.html?page=2"><button>2</button></a>
-        <a href="perfume-logined.html?page=3"><button>3</button></a>
-        <a href="perfume-logined.html?page=?"><button>...</button></a>
+        <a href="perfume-logined.html?page=1"><button class="page-button">1</button></a>
+        <a href="perfume-logined.html?page=2"><button class="page-button">2</button></a>
+        <a href="perfume-logined.html?page=3"><button class="page-button">3</button></a>
+        <a href="perfume-logined.html?page=?"><button class="page-button">...</button></a>
     </div>
 </div>
 <footer>
     <p>&copy; 2024 Meowti's Cosmetics Store. All rights reserved.</p>
 </footer>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/pagination.js"></script>
 </body>
 </html>

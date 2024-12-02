@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - User Management</title>
-    <link rel="stylesheet" href="/assets/css/admin.css">
-    <link rel="stylesheet" href="/assets/css/admin-user.css">
+    <title>Quản lí người dùng</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/admin-user.css">
 </head>
 <body>
     <header>
         <a href="admin-logined.html" class="home-button">Trang chủ</a>
-        <h1>Quản lý Thông tin Quản trị</h1>
+        <h1>Quản lí người dùng</h1>
         <div class="user-dropdown">
             <span class="welcome-message">Chào Nguyễn Văn A</span>
             <div class="dropdown-content">
@@ -22,51 +22,95 @@
 
     <div class="container">
         <nav class="navigation">
-            <nav class="navigation">
-                <ul>
-                    <li><a href="admin-user.html">Chỉnh sửa thông tin người dùng</a></li>
-                    <li><a href="admin-addproduct.html">Thêm sản phẩm</a></li>
-                    <li><a href="admin-change-product.html">Chỉnh sửa/xóa sản phẩm</a></li>
-                    <li><a href="admin-history.html">Lịch sử mua hàng</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="admin-user.html">Quản lí người dùng</a></li>
+                <li><a href="admin-addproduct.html">Thêm sản phẩm</a></li>
+                <li><a href="admin-change-product.html">Chỉnh sửa/xóa sản phẩm</a></li>
+                <li><a href="admin-history.html">Quản lí đơn hàng</a></li>
+                <li><a href="admin-statics.html">Thống kê </a></li>
+            </ul>
         </nav>
 
         <div class="inner">
-            <h2>Quản lý Người dùng</h2>
+            <h2>Danh sách người dùng</h2>
+            <table border="1" cellspacing="0" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th>Tên đăng nhập</th>
+                        <th>Thời gian đăng nhập lần cuối</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample data -->
+                    <tr>
+                        <td>user1</td>
+                        <td>2024-11-25 14:22</td>
+                        <td>
+                            <button>Chỉnh sửa tài khoản</button>
+                            <button>Khóa tài khoản</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>user2</td>
+                        <td>2024-11-24 10:18</td>
+                        <td>
+                            <button>Chỉnh sửa tài khoản</button>
+                            <button>Khóa tài khoản</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>user3</td>
+                        <td>2024-11-23 18:50</td>
+                        <td>
+                            <button>Chỉnh sửa tài khoản</button>
+                            <button>Khóa tài khoản</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>user4</td>
+                        <td>2024-11-22 12:30</td>
+                        <td>
+                            <button>Chỉnh sửa tài khoản</button>
+                            <button>Khóa tài khoản</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>user5</td>
+                        <td>2024-11-21 08:15</td>
+                        <td>
+                            <button>Chỉnh sửa tài khoản</button>
+                            <button>Khóa tài khoản</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <!-- User Info Boxes -->
-            <div class="user-info-boxes">
-                <div class="info-box">
-                    <h3>Số người dùng đang hoạt động</h3>
-                    <p>120</p>
-                </div>
-                <div class="info-box">
-                    <h3>Số tài khoản không hoạt động trong 30 ngày</h3>
-                    <p>15</p>
-                </div>
-            </div>
-            <div class="user-username">
-                <h3>Tra cứu thông tin người dùng</h3>
-                <input type="text" id="user-username-input" placeholder="Nhập tên đăng nhập của khách hàng.">
-            </div>
-            <!-- User Actions -->
-            <div class="button-group">
-                    <button>Tạm khóa tài khoản</button>
-                    <button>Xóa tài khoản</button>
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-button" disabled>« Trước</button>
+                <button class="page-button active">1</button>
+                <button class="page-button">2</button>
+                <button class="page-button">3</button>
+                <button class="page-button">Tiếp »</button>
             </div>
 
-            <!-- Change Password Section -->
-            <div class="change-password">
-                <h3>Đổi mật khẩu</h3>
-                <label for="current-password">Nhập mật khẩu cũ:</label>
-                <input type="password" id="current-password" placeholder="Mật khẩu cũ">
-                
-                <label for="new-password">Nhập mật khẩu mới:</label>
-                <input type="password" id="new-password" placeholder="Mật khẩu mới">
-                
-                <button>Đổi mật khẩu</button>
-            </div>
+            <h2>Thêm tài khoản</h2>
+            <form>
+                <div>
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="confirm-password">Nhập lại mật khẩu:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" style="margin-top: 10px;">Thêm tài khoản</button>
+            </form>
         </div>
     </div>
 </body>

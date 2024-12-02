@@ -35,7 +35,7 @@
             
             <div class="lowerheader-inner">
                 <div class="lowerheader-textbox">
-                    <h1 class="lowerheader-logo"><span style="color: #f6d9f2">Meow</span><span style="color: #f6d9f2">ti's cosmetics store</span></h1>
+                    <h1 class="lowerheader-logo"><span style="color: #f6d9f2; font-family: 'Times New Roman', Times, sans-serif;">Meow</span><span style="color: #f6d9f2;  font-family: 'Times New Roman', Times, sans-serif;">ti's cosmetics store</span></h1>
                     <h5>Cửa hàng mỹ phẩm thời trang, uy tín</h5>
                 </div>
                 <div class="image-container">
@@ -47,6 +47,8 @@
         <div class="inner">
             <div class="advanced-search">
                 <form class="search-form" action="search.html" method="GET">
+                     <!-- Tìm kiếm theo tên -->
+            <input type="text" name="name" placeholder="Nhập tên sản phẩm..." class="search-input" />
                     <!-- Tìm kiếm theo thể loại -->
                     <select name="category">
                         <option value="">Chọn loại sản phẩm</option>
@@ -64,15 +66,7 @@
                         <option value="500000-1000000">500,000 - 1,000,000 VND</option>
                         <option value="1000000+">Trên 1,000,000 VND</option>
                     </select>
-                    
-                    <!-- Tìm kiếm theo đánh giá -->
-                    <select name="rating">
-                        <option value="">Chọn dòng sản phẩm</option>
-                        <option value="5">Cao cấp</option>
-                        <option value="4">Trung cấp</option>
-                        <option value="3">Phổ thông</option>
-                    </select>
-        
+                  
                     <!-- Nút tìm kiếm -->
                     <button type="submit">Tìm kiếm</button>
                 </form>
@@ -180,16 +174,16 @@
             </section>
         </div>
         <div class="pagination">
-            <a href="lipstick.html?page=1"><button>1</button></a>
-            <a href="lipstick.html?page=2"><button>2</button></a>
-            <a href="lipstick.html?page=3"><button>3</button></a>
-            <a href="lipstick.html?page=?"><button>...</button></a>
+            <a href="lipstick.html?page=1"><button class="page-button">1</button></a>
+            <a href="lipstick.html?page=2"><button class="page-button">2</button></a>
+            <a href="lipstick.html?page=3"><button class="page-button">3</button></a>
+            <a href="lipstick.html?page=?"><button class="page-button">...</button></a>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2024 Meowti's Cosmetics Store. All rights reserved.</p>
     </footer>
-    
+    <script src="assets/js/pagination.js"></script>
 </body>
 </html>

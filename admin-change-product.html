@@ -1,216 +1,206 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meowti's Cosmetics Store</title>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
     <link rel="stylesheet" href="assets/css/admin-change-product.css">
 </head>
 <body>
-        <header>
-            <div class="header-container">
-                <nav>
-                    <ul>
-                        <div class="logo-container">
-                            <a href="index.html">
-                            <img src="assets/images/5.jpg" alt="Logo nhỏ">
-                            </a>
-                        </div>
-                    </form>
-                    <li><a href="#">NƯỚC HOA</a></li>
-                    <li><a href="#">SON MÔI</a></li>
-                    <li><a href="#">PHẤN</a></li>
-                    <li><a href="#">MỸ PHẨM KHÁC</a></li>
-                    </ul>
-                </nav>
-                <div class="header">
-                    <div class="welcome-btn logined-btn">
-                        <a href="admin-logined.html">Trở về</a>
-                    </div>
-                    </div>
+    <header>
+        <a href="admin-logined.html" class="home-button">Trang chủ</a>
+        <h1>Quản lí sản phẩm</h1>
+        <div class="user-dropdown">
+            <span class="welcome-message">Chào Nguyễn Văn A</span>
+            <div class="dropdown-content">
+                <a href="admin-admin.html">Chỉnh sửa thông tin quản trị</a>
+                <a href="#">Đăng xuất</a>
             </div>
-        </header>
-    
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="admin-user.html">Quản lí người dùng</a></li>
+                <li><a href="admin-addproduct.html">Thêm sản phẩm</a></li>
+                <li><a href="admin-change-product.html">Chỉnh sửa/xóa sản phẩm</a></li>
+                <li><a href="admin-history.html">Quản lí đơn hàng</a></li>
+                <li><a href="admin-statics.html">Thống kê </a></li>
+            </ul>
+        </nav>
+
         <div class="inner">
-            <div class="advanced-search">
-                <form class="search-form" action="#" method="GET">
-                    <!-- Tìm kiếm theo thể loại -->
-                    <select name="category">
-                        <option value="">Chọn loại sản phẩm</option>
-                        <option value="electronics">Nước hoa</option>
-                        <option value="fashion">Son môi</option>
-                        <option value="home">Phấn</option>
-                        <option value="books">Mỹ phẩm khác</option>
-                    </select>
-                    
-                    <!-- Tìm kiếm theo giá -->
-                    <select name="price">
-                        <option value="">Chọn mức giá</option>
-                        <option value="0-100000">Dưới 100,000 VND</option>
-                        <option value="100000-500000">100,000 - 500,000 VND</option>
-                        <option value="500000-1000000">500,000 - 1,000,000 VND</option>
-                        <option value="1000000+">Trên 1,000,000 VND</option>
-                    </select>
-                    
-                    <!-- Tìm kiếm theo đánh giá -->
-                    <select name="rating">
-                        <option value="">Chọn dòng sản phẩm</option>
-                        <option value="5">Cao cấp</option>
-                        <option value="4">Trung cấp</option>
-                        <option value="3">Phổ thông</option>
-                    </select>
-        
-                    <!-- Nút tìm kiếm -->
-                    <button type="submit">Tìm kiếm</button>
-                </form>
-            </div>
             <section class="products">
                 <div class="grid-container">
                     <div class="product-item">
-                        <a href="#">
+                        <a href="admin-change-product.html?id=1">
                             <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
                             <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
                             <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product2.jpg" alt="Sản phẩm 2">
-                            <h3>Son Gel TechnoSatin</h3>
-                            <p>800,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product3.jpg" alt="Sản phẩm 3">
-                            <h3>Son Dior</h3>
-                            <p>850,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product4.jpg" alt="Sản phẩm 4">
-                            <h3>Nước hoa nữ Dior Miss Dior Blooming Bouquet EDT</h3>
-                            <p>2,850,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product5.jpg" alt="Sản phẩm 5">
-                            <h3>Miss Di</h3>
-                            <p>600,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product6.jpg" alt="Sản phẩm 6">
-                            <h3>Phấn Phủ Bột Nars Light Reflecting Setting Loose Powder</h3>
-                            <p>200,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product7.jpg" alt="Sản phẩm 7">
-                            <h3>Phấn Phủ Bột Perfect Diary Weightless Soft Velvet Blurring Loose Powder</h3>
-                            <p>199,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product8.jpg" alt="Sản phẩm 8">
-                            <h3>Phấn Phủ YSL All Hours Hyper Finish 01  </h3>
-                            <p>1,499,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product9.jpg" alt="Sản phẩm 9">
-                            <h3>Son 3CE Soft Matte Red Muse</h3>
-                            <p>279,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product10.jpg" alt="Sản phẩm 10">
-                            <h3>Nước Hoa Burberry For Women EDP</h3>
-                            <p>1,280,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product11.jpg" alt="Sản phẩm 11">
-                            <h3>Son Tint Carslan Lip Glow Serum</h3>
-                            <p>229,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
                     <div class="product-item">
-                        <a href="#">
-                            <img src="assets/images/product12.jpg" alt="Sản phẩm 12">
-                            <h3>Phấn phủ Dior Forever Natural Velvet Transfer-Proof Compact Foundation</h3>
-                            <p>2.250,000 VND</p>
+                        <a href="admin-change-product.html?id=1">
+                            <img src="assets/images/product1.jpg" alt="Sản phẩm 1">
+                            <h3>Nước hoa nữ Chanel Coco Mademoiselle Eau de Parfum</h3>
+                            <p>3,500,000 VND</p>
                         </a>
                         <div class="product-actions">
-    <button class="edit-btn" onclick="editProduct()"><a href="admin-edit-product.html?id=1">Chỉnh sửa</a></button>
-    <button class="delete-btn" onclick="deleteProduct()">Xóa mặt hàng</button>
-</div>
+                            <a href="admin-edit-product.html?id=1">
+                                <button class="edit-button">Chỉnh sửa mặt hàng</button>
+                            </a>
+                            <button class="delete-button">Xóa mặt hàng</button>
+                        </div>
                     </div>
+                    
+                </div>
+                <div class="pagination">
+                    <a href="admin-change-product.html?page=1"><button class="page-button ">1</button></a>
+                    <a href="admin-change-product.html?page=2"><button class="page-button">2</button></a>
+                    <a href="admin-change-product.html?page=3"><button class="page-button">3</button></a>
+                    <a href="admin-change-product.html?page="><button class="page-button">...</button></a>
                 </div>
             </section>
         </div>
-        <div class="pagination">
-            <a href="admin-change-product.html?id=1"><button>1</button></a>
-            <a href="admin-change-product.html?id=2"><button>2</button></a>
-            <a href="admin-change-product.html?id=3"><button>3</button></a>
-            <a href="admin-change-product.html?id=?"><button>...</button></a>
-        </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Meowti's Cosmetics Store. All rights reserved.</p>
-    </footer>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/pagination.js"></script>
 </body>
 </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hóa đơn khác hàng</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/admin-user-bill.css">
+</head>
+<body>
+    <header>
+        <a href="admin-logined.html" class="home-button">Trang chủ</a>
+        <h1>Hóa đơn của khách hàng</h1>
+        <div class="user-dropdown">
+            <span class="welcome-message">Chào Nguyễn Văn A</span>
+            <div class="dropdown-content">
+                <a href="admin-admin.html">Chỉnh sửa thông tin quản trị</a>
+                <a href="#">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="admin-user.html">Quản lí người dùng</a></li>
+                <li><a href="admin-addproduct.html">Thêm sản phẩm</a></li>
+                <li><a href="admin-change-product.html">Chỉnh sửa/xóa sản phẩm</a></li>
+                <li><a href="admin-history.html">Quản lí đơn hàng</a></li>
+                <li><a href="admin-statics.html">Thống kê </a></li>
+            </ul>
+        </nav>
+        <div class="inner">
+            
+            <!-- Thông tin tài khoản khách hàng -->
+            <div class="account-info">
+                <h2>Thông Tin Khách Hàng</h2>
+                <p><strong>Tên tài khoản:</strong> user1</p>
+                <p><strong>Tên khách hàng:</strong> Nguyễn Bình An</p>
+                <p><strong>Số điện thoại:</strong> 0987654321</p>
+                <p><strong>Email:</strong> binhnan@example.com</p>
+                <p><strong>Địa chỉ:</strong> 456 Đường DEF, Quận UVW</p>
+            </div>
+    
+            <!-- Danh sách các đơn hàng -->
+            <h3>Danh Sách Các Đơn Hàng Đã Đặt</h3>
+            <div class="orders-list">
+             
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Số Đơn Hàng</th>
+                            <th>Ngày Đặt</th>
+                            <th>Sản Phẩm</th>
+                            <th>Số Lượng</th>
+                            <th>Đơn Giá</th>
+                            <th>Thành Tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Đơn hàng 1 -->
+                        <tr>
+                            <td>DH001</td>
+                            <td>01/12/2024</td>
+                            <td>Phấn Phủ Bột Nars Light Reflecting Setting Loose Powder</td>
+                            <td>2</td>
+                            <td>12,000,000 VND</td>
+                            <td>24,000,000 VND</td>
+                        </tr>
+                        <!-- Đơn hàng 2 -->
+                        <tr>
+                            <td>DH002</td>
+                            <td>03/12/2024</td>
+                            <td>Phấn Phủ Bột Perfect Diary Weightless Soft Velvet Blurring Loose Powder</td>
+                            <td>1</td>
+                            <td>8,000,000 VND</td>
+                            <td>8,000,000 VND</td>
+                        </tr>
+                        <!-- Đơn hàng 3 -->
+                        <tr>
+                            <td>DH003</td>
+                            <td>05/12/2024</td>
+                            <td>Nước Hoa Burberry For Women EDP</td>
+                            <td>1</td>
+                            <td>5,000,000 VND</td>
+                            <td>5,000,000 VND</td>
+                        </tr>
+                        <!-- Đơn hàng 4 -->
+                        <tr>
+                            <td>DH004</td>
+                            <td>06/12/2024</td>
+                            <td>Son 3CE Soft Matte Red Muse</td>
+                            <td>3</td>
+                            <td>1,500,000 VND</td>
+                            <td>4,500,000 VND</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <!-- Tổng số tiền tất cả -->
+            <div class="total-info">
+                <h4>Tổng cộng: </h4>
+                <p>41,500,000 VND    </p>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>

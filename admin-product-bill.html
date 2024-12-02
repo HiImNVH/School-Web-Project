@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hóa đơn sản phẩm</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/admin-user-bill.css">
+</head>
+<body>
+    <header>
+        <a href="admin-logined.html" class="home-button">TRANG CHỦ</a>
+        <h1>Hóa Đơn Sản Phẩm</h1>
+        <div class="user-dropdown">
+            <span class="welcome-message">Chào Nguyễn Văn A</span>
+            <div class="dropdown-content">
+                <a href="admin-admin.html">Chỉnh sửa thông tin quản trị</a>
+                <a href="#">Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="admin-user.html">Quản lí người dùng</a></li>
+                <li><a href="admin-addproduct.html">Thêm sản phẩm</a></li>
+                <li><a href="admin-change-product.html">Chỉnh sửa/xóa sản phẩm</a></li>
+                <li><a href="admin-history.html">Quản lí đơn hàng</a></li>
+                <li><a href="admin-statics.html">Thống kê</a></li>
+            </ul>
+        </nav>
+
+        <div class="inner">
+            <!-- Thông tin sản phẩm đã bán -->
+            <div class="account-info">
+                    <h2>Thông Tin Chi Tiết Sản Phẩm</h2>
+                    <p><strong>Mã sản phẩm:</strong> DH002.</p>
+                    <p><strong>Tên sản phẩm:</strong> Nước Hoa Burberry For Women EDP.</p>
+                    <p><strong>Đơn giá:</strong> 1,500,000 VND.</p>
+                    <p><strong>Số lượng đã bán:</strong> 250.</p>
+            </div>
+            
+            
+
+            <!-- Bảng thông tin chi tiết -->
+            <h3>Đơn Hàng Đã Xuất</h3>
+            <div class="orders-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã Đơn Hàng</th>
+                            <th>Mã Khách Hàng</th>
+                            <th>Địa chỉ</th>
+                            <th>Ngày Xuất</th>
+                            <th>Số Lượng</th>
+                            <th>Thành Tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SP001</td>
+                            <td>DH34F</td>
+                            <td> 456 Đường DEF, Quận UVW</td>
+                            <td>01/12/2024</td>
+                            <td>2</td>
+                            <td>24,000,000 VND</td>
+                        </tr>
+                        <tr>
+                            <td>SP002</td>
+                            <td>DH34F</td>
+                            <td> 456 Đường DEF, Quận UVW</td>
+                            <td>03/12/2024</td>
+                            <td>1</td>
+                            <td>8,000,000 VND</td>
+                        </tr>
+                        <tr>
+                            <td>SP003</td>
+                            <td>DH34F</td>
+                            <td> 456 Đường DEF, Quận UVW</td>
+                            <td>05/12/2024</td>
+                            <td>1</td>
+                            <td>5,000,000 VND</td>
+                        </tr>
+                        <tr>
+                            <td>SP004</td>
+                            <td>DH34F</td>
+                            <td> 456 Đường DEF, Quận UVW</td>
+                            <td>06/12/2024</td>
+                            <td>3</td>
+                            <td>4,500,000 VND</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tổng số tiền -->
+            <div class="total-info">
+                <h4>Tổng cộng:</h4>
+                <p>41,500,000 VND</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
